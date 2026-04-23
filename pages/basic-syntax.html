@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title -->
+    <title>The Mau Book - Basic Syntax</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="">
+
+    <!--  Meta tags -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- Google Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../theme/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../theme/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../theme/vendor/prism/prism.css">
+
+    <!-- CSS Template -->
+    <link rel="stylesheet" href="/theme/css/main.min.css?1a97a760">
+
+<!-- Pygments CSS Template -->
+<link rel="stylesheet" href="/theme/css/pygments.min.css?29bb554c">
+    
+  </head>
+  <body class="bg-white">
+
+<!-- Header -->
+<header class="duik-header">
+  <nav class="navbar navbar-dark fixed-top bg-primary flex-nowrap p-0">
+    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The <strong>Mau</strong> Markup Language</a>
+
+    <!-- Header Links -->
+    <ul class="navbar-nav duik-header__nav small text-nowrap flex-row px-3 ml-0 ml-sm-3">
+      <li class="nav-item ml-4">
+        <a class="nav-link" href="https://github.com/Project-Mau/maubook/issues" title="Report an Issue" target="_blank"><i class="fas fa-bug mr-sm-1"></i> <span class="d-none d-lg-inline-block">Found an issue in the docs?</span></a>
+      </li>
+      <li class="nav-item ml-3 ml-sm-5">
+        <a class="btn btn-sm btn-light text-primary" href="https://github.com/Project-Mau" title="Download"><i class="fab fa-github mr-sm-1"></i> Fork on GitHub</a>
+      </li>
+    </ul>
+    <!-- End Header Links -->
+  </nav>
+</header>
+<!-- End Header -->
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <nav class="col-md-3 col-xl-2 bg-light duik-sidebar navbar-expand-md">
+      <div class="d-flex d-md-none justify-content-between mb-5">
+        <!-- Sidebar Search -->
+        <form class="col form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+        <!-- End Sidebar Search -->
+
+        <!-- Responsive Toggle Button -->
+        <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#sidebar-nav" aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+            <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+          </svg>
+        </button>
+        <!-- End Responsive Toggle Button -->
+      </div>
+
+      <!-- Sidebar Nav -->
+      <div class="collapse navbar-collapse" id="sidebar-nav">
+        <div class="js-scrollbar duik-sidebar-sticky">
+          <h5 class="duik-sidebar__heading">maubook</h5>
+          <ul class="duik-sidebar__nav">
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction.html">Introduction</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/install-and-run-mau.html">Install and Run Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/an-overview-of-mau.html">An overview of Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link active" href="/pages/basic-syntax.html">Basic Syntax</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/formatting-text.html">Formatting text</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/headers.html">Headers</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/lists.html">Lists</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/images.html">Images</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/controls.html">Controls</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/blocks.html">Blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-engines-and-custom-definitions.html">Block Engines and Custom Definitions</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/footnotes.html">Footnotes</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-groups.html">Block groups</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-code-blocks.html">Source Code Blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-templates.html">Basic Templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-templates.html">Advanced Templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/list-of-nodes.html">List of nodes</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python Interface</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/configuration.html">Configuration</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/history-of-mau.html">History of Mau</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Sidebar Nav -->
+    </nav>
+    <!-- End Sidebar -->
+
+    <main class="ml-md-auto col-md-9 col-xl-10 px-4 pt-0 pt-md-11">
+      <div class="row pt-3">
+        <!-- Content Nav -->
+        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#basic-syntax-9710">Basic Syntax</a><ul><li class="duik-content-nav__item"><a href="#paragraphs-0a9d">Paragraphs</a></li><li class="duik-content-nav__item"><a href="#comments-e6fa">Comments</a></li><li class="duik-content-nav__item"><a href="#include-other-files-e123">Include other files</a></li><li class="duik-content-nav__item"><a href="#variables-692c">Variables</a><ul><li class="duik-content-nav__item"><a href="#preventing-replacement-372a">Preventing replacement</a></li><li class="duik-content-nav__item"><a href="#boolean-variables-43d1">Boolean variables</a></li><li class="duik-content-nav__item"><a href="#namespaces-d8f1">Namespaces</a></li></ul></li><li class="duik-content-nav__item"><a href="#arguments-aaff">Arguments</a></li><li class="duik-content-nav__item"><a href="#arguments-for-document-nodes-1189">Arguments for document nodes</a><ul><li class="duik-content-nav__item"><a href="#subtype-2494">Subtype</a></li><li class="duik-content-nav__item"><a href="#tags-e9ff">Tags</a></li></ul></li></ul></li></ul></div>
+        <!-- End Content Nav -->
+
+        <!-- Content -->
+        <div class="col-xl-10 order-xl-1 duik-content border-bottom">
+          <div><div class="content"></div></div><div class="border-bottom mb-7"><h1>Basic Syntax</h1></div><div class="border-bottom mb-7"><blockquote class="blockquote"><p>Some of the newer ones are having trouble because they never really mastered some basic techniques, but they’re working hard and improving.</p><footer class="blockquote-footer">Orson Scott Card, <em>Ender&#x27;s Game</em> (1985)</footer></blockquote></div><p>This and the following chapters will give you an overview of the basic syntax for paragraphs, styles, and other inline elements like links and images. If you are familiar with either Markdown or Asciidoctor none of these will be a surprise to you, but this documentation will describe everything assuming the reader doesn&#x27;t know any markup language.</p><p>The documentation will refer to generic input and output, meaning respectively the Mau source and the final result.</p><h2 id="paragraphs-0a9d" class="mt-6">Paragraphs<a class="js-anchor-link duik-anchorjs-link" href="#paragraphs-0a9d" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>The simplest element in Mau is a line of text that forms a paragraph</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">This is a line of text.
+</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><p>This is a line of text.</p></div><p>Adjacent lines of text are automatically joined into a single paragraph. For example</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">This is a sentence. And another sentence.
+</pre></div></div></div><p>and </p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">This is a sentence.
+And another sentence.
+</pre></div></div></div><p>will both be rendered as</p><div class="duik-callout duik-callout-success" role="callout"><p>This is a sentence. And another sentence.</p></div><p>To separate paragraphs you need to insert one or more empty lines. For example</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">This is a sentence.
+
+And another sentence.
+</pre></div></div></div><p>and </p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">This is a sentence.
+
+
+
+And another sentence.
+</pre></div></div></div><p>will both be rendered as</p><div class="duik-callout duik-callout-success" role="callout"><p>This is a sentence.</p>
+<p>And another sentence.</p></div><h2 id="comments-e6fa" class="mt-6">Comments<a class="js-anchor-link duik-anchorjs-link" href="#comments-e6fa" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>Mau supports single-line and multi-line comments. A single line comment uses double slashes</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">This is a sentence.
+
+And another sentence.
+
+// This is a comment and won&#39;t be rendered
+</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><p>This is a sentence.</p>
+<p>And another sentence.</p></div><p>while multi-line comments are surrounded by four slashes on a separate line</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">This is a sentence.
+
+And another sentence.
+
+////
+This is also a comment
+but it&#39;s spread on
+multiple lines
+for fun and to be a
+little more readable
+////
+</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><p>This is a sentence.</p>
+<p>And another sentence.</p></div><h2 id="include-other-files-e123" class="mt-6">Include other files<a class="js-anchor-link duik-anchorjs-link" href="#include-other-files-e123" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>You can include other files through the directive <code>#include</code>. Directives are special commands that are processed before the Mau code is properly parsed</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">::#include:/path/to/file.mau
+</pre></div></div></div><p>Since the inclusion happens during the very first stages of the processing, you can include files anywhere in the document. The directive, however, cannot be surrounded by other text. Therefore, you cannot include the content of a file in the middle of a paragraph or in a header.</p><h2 id="variables-692c" class="mt-6">Variables<a class="js-anchor-link duik-anchorjs-link" href="#variables-692c" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>Mau supports variables of two types: strings and booleans. You can define variables at any point in a Mau document with the syntax <code>:NAME:VALUE</code> and then insert the value using the syntax <code>{NAME}</code>. For example</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">:answer:42
+
+The Answer to the Ultimate Question of Life,
+the Universe, and Everything is {answer}.
+</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><p>The Answer to the Ultimate Question of Life, the Universe, and Everything is 42.</p></div><hr><p>Variables can be used in several contexts. In paragraphs, headers, and footnotes they are useful to place constant strings that are repeated over and over and might need to be changed. Variables are replaced very early in the Mau translation process, so they can contain Mau code.</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">:answer:*42*
+:wikipedia_link:[link](&quot;https://en.wikipedia.org/wiki/42_(number)&quot;)
+
+The Answer to the Ultimate Question of Life,
+the Universe, and Everything is {answer}.
+
+You can learn more about it here {wikipedia_link}
+</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><p>The Answer to the Ultimate Question of Life, the Universe, and Everything is <strong>42</strong>.</p>
+<p>You can learn more about it here <a href="https://en.wikipedia.org/wiki/42_(number)">https://en.wikipedia.org/wiki/42_(number)</a></p></div><p>Variables without a value are simply empty strings.</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">:answer:
+
+The answer is {answer}.
+</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><p>The answer is .</p></div><p>Variables can also be used in block definitions, see <a href="../pages/blocks.html">Blocks</a>.</p><p>Last, variables can contain other variables</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">:answer:42
+:sentence:the answer is {answer}
+
+Here we go: {sentence}
+</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><p>Here we go: the answer is 42</p></div><h3 id="preventing-replacement-372a" class="mt-6">Preventing replacement<a class="js-anchor-link duik-anchorjs-link" href="#preventing-replacement-372a" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>You can prevent variable replacement escaping the curly braces</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">:answer:42
+
+The Answer to the Ultimate Question of Life,
+the Universe, and Everything is \{answer\}
+</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><p>The Answer to the Ultimate Question of Life, the Universe, and Everything is {answer}</p></div><p>As curly braces are used a lot in programming languages, Mau automatically escapes them when they are included in verbatim text</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">:answer:42
+
+The Answer to the Ultimate Question of Life,
+the Universe, and Everything is `{answer}`
+</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><p>The Answer to the Ultimate Question of Life, the Universe, and Everything is <code>{answer}</code></p></div><h3 id="boolean-variables-43d1" class="mt-6">Boolean variables<a class="js-anchor-link duik-anchorjs-link" href="#boolean-variables-43d1" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>Variables can have boolean values and be used as flags in conditional rendering (see <a href="../pages/controls.html">Controls</a>). To create a boolean you need to use a <code>+</code> or <code>-</code> in front of the variable name, which will assig respectively a true or false value. The name of the variable will not contain the initial symbol.</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">:+trueflag:
+:-falseflag:
+</pre></div></div></div><p>When printed, boolean flags are empty strings.</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">:+trueflag:
+:-falseflag:
+
+The first flag is {trueflag}. The second flag is {falseflag}.
+</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><p>The first flag is . The second flag is .</p></div><h3 id="namespaces-d8f1" class="mt-6">Namespaces<a class="js-anchor-link duik-anchorjs-link" href="#namespaces-d8f1" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>Variables can be created under a specific namespace using a dotted syntax</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">:value:5
+:module.value:6
+
+The values are {value} and {module.value}.
+</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><p>The values are 5 and 6.</p></div><p>Mau&#x27;s configuration values are available under the <code>mau</code> namespace (see <a href="../pages/configuration.html">Configuration</a>).</p><h2 id="arguments-aaff" class="mt-6">Arguments<a class="js-anchor-link duik-anchorjs-link" href="#arguments-aaff" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>As explained in the previous chapter, several Mau commands accept arguments, either as part of their syntax like macros (<code>[macro](argument1, argument2, ...)</code>) and commands (<code>::command:argument1, argument2, ...</code>) or as a stand alone component (<code>[argument1, argument2, ...]</code>) like paragraphs and blocks do.</p><p>In any of these cases, the syntax of arguments is always the same and here you&#x27;ll find a detailed explanation.</p><p>Arguments can be <strong>unnamed</strong> or <strong>named</strong>. An unnamed argument has just a value, for example <code>html</code>, while a named one has a key and a value linked by an equal sign, like <code>language=html</code>. There can&#x27;t be a space between the key and the value, so an argument like <code>language = html</code> is invalid.</p><p>Following Python&#x27;s lingo, unnamed arguments are called <code>args</code> (list) while named arguments are called <code>kwargs</code> (dictionary)</p><p>Multiple arguments are separated by commas, optionally followed by one or more spaces. So, <code>source,html</code> and <code>source, html</code> are both valid, and the same is valid for named arguments, as <code>source,language=html</code> and <code>source, language=html</code> are equally accepted by the parser.</p><p>Unnamed arguments can never follow named ones, so the syntax <code>language=html, source</code> is invalid.</p><p>If an argument contains one or more spaces or commas you need to surround it with quotes, e.g. <code>attribution="J.R.R. Tolkien"</code> or <code>classes="class1,class2"</code>. If arguments are surrounded by round or square bracket, you have to use quotes whenever the value contains the closing bracket. E.g. <code>(attribution="The (real) author")</code>. If you need to pass quotes as value of an argument you need to escape them, e.g. <code>attribution="The so-called \"author\""</code>.</p><h2 id="arguments-for-document-nodes-1189" class="mt-6">Arguments for document nodes<a class="js-anchor-link duik-anchorjs-link" href="#arguments-for-document-nodes-1189" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>Arguments are used to pass data to nodes. In the case of macros and commands, they contain the values that are used by the logic behind those components, but for document nodes they are used to customise appearance and behaviour.</p><p>In particular, document nodes support two special arguments called subtype and tags.</p><h3 id="subtype-2494" class="mt-6">Subtype<a class="js-anchor-link duik-anchorjs-link" href="#subtype-2494" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>The first unnamed argument whose value starts with <code>*</code> is interpreted as the subtype of the component and plays an important role in the choice of the rendering template, as will be clarified later in the documentation. For example</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[*ctype1, arg1, arg2] &lt;--------- The paragraph receives the following arguments:
+This is a paragraph of text.       * args = [&quot;arg1&quot;, &quot;arg2&quot;]
+                                   * kwargs = {}
+                                   * subtype = &quot;ctype1&quot;
+</pre></div></div></div><p>You don&#x27;t need to specify the subtype, but you should have maximum one of them. If you specify multiple ones Mau will keep only the first one. For example, the syntax <code>[*ctype1, *ctype2, arg1, arg2]</code> will be parsed as the previous one and subtype <code>ctype2</code> will be lost.</p><h3 id="tags-e9ff" class="mt-6">Tags<a class="js-anchor-link duik-anchorjs-link" href="#tags-e9ff" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>Tags are special arguments prefixed by <code>#</code>. Whenever Mau finds an unnamed argument that starts with <code>#</code> it will strip the prefix and collect the argument in a separate list called <code>tags</code>. For example</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[*source, #custom, red, language=html] &lt;--------- The paragraph receives the following arguments:
+This is a paragraph of text.                        * args = [&quot;red&quot;]
+                                                    * kwargs = {&quot;language&quot;:&quot;html&quot;}
+                                                    * tags = [&quot;custom&quot;]
+                                                    * subtype = &quot;source&quot;
+</pre></div></div></div><p>Tags are useful to categorise elements to apply special formatting. Please note that the parsed name of the tag doesn&#x27;t contain the hash mark <code>#</code>.</p><div id="_footnotes"></div>
+        </div>
+        <!-- End Content -->
+      </div>
+
+      <!-- Footer -->
+      <footer class="small py-4">
+        <div class="row">
+          <!-- Copyright -->
+          <div class="col-md-6 text-center text-dark text-md-left mb-3 mb-md-0">
+            &copy; 2024 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
+          </div>
+          <!-- End Copyright -->
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </main>
+  </div>
+</div>
+
+<!-- Go to Top -->
+<a class="js-go-to duik-go-to" href="javascript:;">
+  <span class="fa fa-arrow-up duik-go-to__inner"></span>
+</a>
+<!-- End Go to Top -->
+
+    <!-- JS Global Compulsory -->
+    <script src="../theme/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../theme/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="../theme/vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../theme/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="../theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../theme/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/menu.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+    <script src="../theme/vendor/prism/prism.js"></script>
+
+    <!-- JS -->
+    <script src="../theme/js/main.js"></script>
+    <script src="../theme/js/autocomplete.js"></script>
+    <script src="../theme/js/custom-scrollbar.js"></script>
+
+  </body>
+</html>

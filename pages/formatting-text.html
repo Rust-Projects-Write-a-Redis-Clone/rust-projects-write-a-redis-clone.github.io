@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title -->
+    <title>The Mau Book - Formatting text</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="">
+
+    <!--  Meta tags -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- Google Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../theme/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../theme/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../theme/vendor/prism/prism.css">
+
+    <!-- CSS Template -->
+    <link rel="stylesheet" href="/theme/css/main.min.css?1a97a760">
+
+<!-- Pygments CSS Template -->
+<link rel="stylesheet" href="/theme/css/pygments.min.css?29bb554c">
+    
+  </head>
+  <body class="bg-white">
+
+<!-- Header -->
+<header class="duik-header">
+  <nav class="navbar navbar-dark fixed-top bg-primary flex-nowrap p-0">
+    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The <strong>Mau</strong> Markup Language</a>
+
+    <!-- Header Links -->
+    <ul class="navbar-nav duik-header__nav small text-nowrap flex-row px-3 ml-0 ml-sm-3">
+      <li class="nav-item ml-4">
+        <a class="nav-link" href="https://github.com/Project-Mau/maubook/issues" title="Report an Issue" target="_blank"><i class="fas fa-bug mr-sm-1"></i> <span class="d-none d-lg-inline-block">Found an issue in the docs?</span></a>
+      </li>
+      <li class="nav-item ml-3 ml-sm-5">
+        <a class="btn btn-sm btn-light text-primary" href="https://github.com/Project-Mau" title="Download"><i class="fab fa-github mr-sm-1"></i> Fork on GitHub</a>
+      </li>
+    </ul>
+    <!-- End Header Links -->
+  </nav>
+</header>
+<!-- End Header -->
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <nav class="col-md-3 col-xl-2 bg-light duik-sidebar navbar-expand-md">
+      <div class="d-flex d-md-none justify-content-between mb-5">
+        <!-- Sidebar Search -->
+        <form class="col form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+        <!-- End Sidebar Search -->
+
+        <!-- Responsive Toggle Button -->
+        <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#sidebar-nav" aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+            <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+          </svg>
+        </button>
+        <!-- End Responsive Toggle Button -->
+      </div>
+
+      <!-- Sidebar Nav -->
+      <div class="collapse navbar-collapse" id="sidebar-nav">
+        <div class="js-scrollbar duik-sidebar-sticky">
+          <h5 class="duik-sidebar__heading">maubook</h5>
+          <ul class="duik-sidebar__nav">
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction.html">Introduction</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/install-and-run-mau.html">Install and Run Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/an-overview-of-mau.html">An overview of Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-syntax.html">Basic Syntax</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link active" href="/pages/formatting-text.html">Formatting text</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/headers.html">Headers</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/lists.html">Lists</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/images.html">Images</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/controls.html">Controls</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/blocks.html">Blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-engines-and-custom-definitions.html">Block Engines and Custom Definitions</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/footnotes.html">Footnotes</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-groups.html">Block groups</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-code-blocks.html">Source Code Blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-templates.html">Basic Templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-templates.html">Advanced Templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/list-of-nodes.html">List of nodes</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python Interface</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/configuration.html">Configuration</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/history-of-mau.html">History of Mau</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Sidebar Nav -->
+    </nav>
+    <!-- End Sidebar -->
+
+    <main class="ml-md-auto col-md-9 col-xl-10 px-4 pt-0 pt-md-11">
+      <div class="row pt-3">
+        <!-- Content Nav -->
+        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#formatting-text-be9e">Formatting text</a><ul><li class="duik-content-nav__item"><a href="#basic-styles-90ce">Basic styles</a><ul><li class="duik-content-nav__item"><a href="#mixing-styles-b82c">Mixing styles</a></li><li class="duik-content-nav__item"><a href="#escaping-52bc">Escaping</a></li></ul></li><li class="duik-content-nav__item"><a href="#text-classes-e9ce">Text classes</a></li><li class="duik-content-nav__item"><a href="#horizontal-rule-2342">Horizontal rule</a></li><li class="duik-content-nav__item"><a href="#links-ebbe">Links</a><ul><li class="duik-content-nav__item"><a href="#add-text-to-the-link-2882">Add text to the link</a></li><li class="duik-content-nav__item"><a href="#using-spaces-and-quotes-7e31">Using spaces and quotes</a></li><li class="duik-content-nav__item"><a href="#mailto-links-6264">Mailto links</a></li><li class="duik-content-nav__item"><a href="#rich-text-1829">Rich text</a></li></ul></li></ul></li></ul></div>
+        <!-- End Content Nav -->
+
+        <!-- Content -->
+        <div class="col-xl-10 order-xl-1 duik-content border-bottom">
+          <div><div class="content"></div></div><div class="border-bottom mb-7"><h1>Formatting text</h1></div><div class="border-bottom mb-7"><blockquote class="blockquote"><p>Leafing through the pages, he saw the book was printed in two colours. There seemed to be no pictures, but there were large, beautiful capital letters at the beginning of the chapters. </p><footer class="blockquote-footer">Michael Ende, <em>The Neverending Story</em> (1979)</footer></blockquote></div><h2 id="basic-styles-90ce" class="mt-6">Basic styles<a class="js-anchor-link duik-anchorjs-link" href="#basic-styles-90ce" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>Inside paragraphs (and in other elements that support it) you can use text formatting which allows you to give text a certain style. Text formatting is done through symbols, enclosing a set of words between two identical symbols. Currently Mau supports</p><ul><li><code>_underscores_</code></li><li><code>*stars*</code></li><li><code>~tildes~</code></li><li><code>^carets^</code></li><li><code>`backticks`</code></li><li><code>$dollars$</code></li><li><code>%percent%</code></li></ul><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">Stars identify *strong* text.
+
+Underscores for _emphasized_ text.
+
+Carets for ^superscript^ and tildes for ~subscript~.
+
+Backticks are used for `verbatim` text.
+
+$Dollars_and_percents$ are %used_to_escape_text%
+</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><p>Stars identify <strong>strong</strong> text.</p>
+<p>Underscores for <em>emphasized</em> text.</p>
+<p>Carets for <sup>superscript</sup> and tildes for <sub>subscript</sub>.</p>
+<p>Backticks are used for <code>verbatim</code> text.</p>
+<p>Dollars_and_percents are used_to_escape_text</p></div><h3 id="mixing-styles-b82c" class="mt-6">Mixing styles<a class="js-anchor-link duik-anchorjs-link" href="#mixing-styles-b82c" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>Text styles can be used together but backticks have a very strong behaviour in Mau</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">You can have _*strong and empashized*_ text.
+
+You can also apply styles to _*`verbatim`*_.
+
+But verbatim will `_*preserve*_` them.
+</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><p>You can have <em><strong>strong and empashized</strong></em> text.</p>
+<p>You can also apply styles to <em><strong><code>verbatim</code></strong></em>.</p>
+<p>But verbatim will <code>_*preserve*_</code> them.</p></div><p>Styles can be applied to only part of a word and do not need spaces</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">*S*trategic *H*azard *I*ntervention *E*spionage *L*ogistics *D*irectorate
+
+It is completely _counter_intuitive.
+
+Parts of words can be ^super^script or ~sub~script.
+
+There are too many `if`s in this function.
+</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><p><strong>S</strong>trategic <strong>H</strong>azard <strong>I</strong>ntervention <strong>E</strong>spionage <strong>L</strong>ogistics <strong>D</strong>irectorate</p>
+<p>It is completely <em>counter</em>intuitive.</p>
+<p>Parts of words can be <sup>super</sup>script or <sub>sub</sub>script.</p>
+<p>There are too many <code>if</code>s in this function.</p></div><h3 id="escaping-52bc" class="mt-6">Escaping<a class="js-anchor-link duik-anchorjs-link" href="#escaping-52bc" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>Using a single style marker doesn&#x27;t trigger any effect. If you need to use two of them in the sentence, though, you have to escape at least one. Or use <code>$</code> and <code>%</code></p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">You can use _single *markers.
+
+But you \_need\_ to escape pairs.
+
+Even though you can escape \_just one_ of the two.
+
+If you have \_more than two\_ it&#39;s better to just \_escape\_ all of them.
+
+Or $you_can_just_use_dollars$ and %percents_which_escape_everything%.
+
+Actually $dollars escape %percents%$, and %percents escape $dollars$%.
+</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><p>You can use _single *markers.</p>
+<p>But you _need_ to escape pairs.</p>
+<p>Even though you can escape _only one_ of the two.</p>
+<p>If you have _more than two_ it&#x27;s better to just _escape_ all of them.</p>
+<p>Or you_can_just_use_dollars and percents_which_escape_everything.</p>
+<p>Actually dollars escape %percents%, and percents escape $dollars$.</p></div><p>The purpose of backticks <code>`</code> is to format code, as you will see in the chapter about templates, while the purpose of dollar <code>$</code> and percent <code>%</code> is just to make it less complicated to represent text that has a lot of special symbols. Dollars and percents escape each other as they are pretty common symbols that you might need to use.</p><h2 id="text-classes-e9ce" class="mt-6">Text classes<a class="js-anchor-link duik-anchorjs-link" href="#text-classes-e9ce" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>You can assign specific classes to part of the text using the macro <code>class</code>. The way classes are used and rendered depends on the output format. If the output is HTML, those will become CSS classes, while PDF output at the moment doesn&#x27;t do anything specific.</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">This is [class](&quot;text wrapped&quot;, myclass) in a class.
+</pre></div></div></div><p>The HTML output of the code above is</p><div class="code mb-3 mt-1"><div class="title px-2">HTML output</div><div class="content"><div class="highlight"><pre class="p-3"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;myclass&quot;</span><span class="p">&gt;</span>text wrapped<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span> in a class.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</pre></div></div></div><hr><p>You can specify multiple classes as arguments. There is no limit to the number of arguments.</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">This is [class](&quot;text wrapped&quot;, myclass1, myclass2) in multiple classes.
+</pre></div></div></div><p>Resulting in</p><div class="code mb-3 mt-1"><div class="title px-2">HTML output</div><div class="content"><div class="highlight"><pre class="p-3"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;myclass1 myclass2&quot;</span><span class="p">&gt;</span>text wrapped<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span> in multiple classes.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</pre></div></div></div><p>Please note that the text passed to the macro <code>class</code> can contain Mau code such as styles.</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">This is [class](&quot;*text with styles* _wrapped_&quot;, &quot;myclass&quot;) in a class.
+</pre></div></div></div><h2 id="horizontal-rule-2342" class="mt-6">Horizontal rule<a class="js-anchor-link duik-anchorjs-link" href="#horizontal-rule-2342" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>You can add a separator or horizontal rule using three dashes <code>---</code> on a separate line.</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">---
+</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><hr></div><h2 id="links-ebbe" class="mt-6">Links<a class="js-anchor-link duik-anchorjs-link" href="#links-ebbe" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>Since markup languages are mostly used to write hyperlinked documents, links play a big part in the syntax. In Mau, links are created with the macro <code>link</code>.</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">The source code can be found at [link](https://github.com/Project-Mau/mau).
+</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><p>The source code can be found at <a href="https://github.com/Project-Mau/mau">https://github.com/Project-Mau/mau</a>.</p></div><p>The values between round brackets are arguments (see <a href="../pages/basic-syntax.html">Basic syntax</a>).</p><h3 id="add-text-to-the-link-2882" class="mt-6">Add text to the link<a class="js-anchor-link duik-anchorjs-link" href="#add-text-to-the-link-2882" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>You can add optional text to the link that will replace the URL in the rendered text</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">The source code can be found
+on [link](https://github.com/Project-Mau/mau, GitHub).
+</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><p>The source code can be found on <a href="https://github.com/Project-Mau/mau">GitHub</a>.</p></div><h3 id="using-spaces-and-quotes-7e31" class="mt-6">Using spaces and quotes<a class="js-anchor-link duik-anchorjs-link" href="#using-spaces-and-quotes-7e31" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>If the title contains spaces or the closing parenthesis <code>)</code> you need to wrap it between double quotes</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">The source code can be found
+on [link](https://github.com/Project-Mau/mau, &quot;the GitHub page&quot;).
+</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><p>The source code can be found on <a href="https://github.com/Project-Mau/mau">the GitHub page</a>.</p></div><p>Should you need to add quotes to the title you will have to escape them</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">The main [link](https://github.com/Project-Mau/mau, &quot;\&quot;repository\&quot;&quot;).
+</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><p>The main <a href="https://github.com/Project-Mau/mau">&quot;repository&quot;</a>.</p></div><p>The same rules are valid for the URL</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">A [link](&quot;https://example.org/?q=[a b]&quot;,&quot;URL with special characters&quot;).
+</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><p>A <a href="https://example.org/?q=[a b]">URL with special characters</a>.</p></div><h3 id="mailto-links-6264" class="mt-6">Mailto links<a class="js-anchor-link duik-anchorjs-link" href="#mailto-links-6264" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>Mailto links can be created with the <code>mailto</code> macro, which works like the <code>link</code> macro described above.</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">Get in touch at [mailto](info@example.com).
+</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><p>Get in touch at <a href="mailto:info@example.com">info@example.com</a>.</p></div><h3 id="rich-text-1829" class="mt-6">Rich text<a class="js-anchor-link duik-anchorjs-link" href="#rich-text-1829" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>The text added to a link is rendered using Mau, so you can include styles or other macros, as long as the output makes sense in the target format. To avoid clashes between Mau syntax and arguments syntax, if you have rich text it is recommended to explicitly mark it as a named <code>text</code> argument.</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">The source code can be found
+on [link](&quot;https://github.com/Project-Mau/mau&quot;, text=&quot;*GitHub*&quot;).
+</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><p>The source code can be found on <a href="https://github.com/Project-Mau/mau"><strong>GitHub</strong></a>.</p></div><p>In this case, the syntax <code>[link]("https://github.com/Project-Mau/mau", "*GitHub*")</code> would be interpreted as a link with subtype <code>GitHub</code> because of the leading <code>*</code>.</p><p>As for rich text, remember that Mau doesn&#x27;t understand output formats, it merely uses templates. So, while it is possible in Mau to insert a link as a text for a link, that doesn&#x27;t make sense in HTML or TeX.</p><div id="_footnotes"></div>
+        </div>
+        <!-- End Content -->
+      </div>
+
+      <!-- Footer -->
+      <footer class="small py-4">
+        <div class="row">
+          <!-- Copyright -->
+          <div class="col-md-6 text-center text-dark text-md-left mb-3 mb-md-0">
+            &copy; 2024 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
+          </div>
+          <!-- End Copyright -->
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </main>
+  </div>
+</div>
+
+<!-- Go to Top -->
+<a class="js-go-to duik-go-to" href="javascript:;">
+  <span class="fa fa-arrow-up duik-go-to__inner"></span>
+</a>
+<!-- End Go to Top -->
+
+    <!-- JS Global Compulsory -->
+    <script src="../theme/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../theme/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="../theme/vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../theme/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="../theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../theme/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/menu.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+    <script src="../theme/vendor/prism/prism.js"></script>
+
+    <!-- JS -->
+    <script src="../theme/js/main.js"></script>
+    <script src="../theme/js/autocomplete.js"></script>
+    <script src="../theme/js/custom-scrollbar.js"></script>
+
+  </body>
+</html>

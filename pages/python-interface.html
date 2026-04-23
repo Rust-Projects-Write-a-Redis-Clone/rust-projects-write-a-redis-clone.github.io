@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title -->
+    <title>The Mau Book - Python Interface</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="">
+
+    <!--  Meta tags -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- Google Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../theme/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../theme/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../theme/vendor/prism/prism.css">
+
+    <!-- CSS Template -->
+    <link rel="stylesheet" href="/theme/css/main.min.css?1a97a760">
+
+<!-- Pygments CSS Template -->
+<link rel="stylesheet" href="/theme/css/pygments.min.css?29bb554c">
+    
+  </head>
+  <body class="bg-white">
+
+<!-- Header -->
+<header class="duik-header">
+  <nav class="navbar navbar-dark fixed-top bg-primary flex-nowrap p-0">
+    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The <strong>Mau</strong> Markup Language</a>
+
+    <!-- Header Links -->
+    <ul class="navbar-nav duik-header__nav small text-nowrap flex-row px-3 ml-0 ml-sm-3">
+      <li class="nav-item ml-4">
+        <a class="nav-link" href="https://github.com/Project-Mau/maubook/issues" title="Report an Issue" target="_blank"><i class="fas fa-bug mr-sm-1"></i> <span class="d-none d-lg-inline-block">Found an issue in the docs?</span></a>
+      </li>
+      <li class="nav-item ml-3 ml-sm-5">
+        <a class="btn btn-sm btn-light text-primary" href="https://github.com/Project-Mau" title="Download"><i class="fab fa-github mr-sm-1"></i> Fork on GitHub</a>
+      </li>
+    </ul>
+    <!-- End Header Links -->
+  </nav>
+</header>
+<!-- End Header -->
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <nav class="col-md-3 col-xl-2 bg-light duik-sidebar navbar-expand-md">
+      <div class="d-flex d-md-none justify-content-between mb-5">
+        <!-- Sidebar Search -->
+        <form class="col form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+        <!-- End Sidebar Search -->
+
+        <!-- Responsive Toggle Button -->
+        <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#sidebar-nav" aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+            <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+          </svg>
+        </button>
+        <!-- End Responsive Toggle Button -->
+      </div>
+
+      <!-- Sidebar Nav -->
+      <div class="collapse navbar-collapse" id="sidebar-nav">
+        <div class="js-scrollbar duik-sidebar-sticky">
+          <h5 class="duik-sidebar__heading">maubook</h5>
+          <ul class="duik-sidebar__nav">
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction.html">Introduction</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/install-and-run-mau.html">Install and Run Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/an-overview-of-mau.html">An overview of Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-syntax.html">Basic Syntax</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/formatting-text.html">Formatting text</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/headers.html">Headers</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/lists.html">Lists</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/images.html">Images</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/controls.html">Controls</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/blocks.html">Blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-engines-and-custom-definitions.html">Block Engines and Custom Definitions</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/footnotes.html">Footnotes</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-groups.html">Block groups</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-code-blocks.html">Source Code Blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-templates.html">Basic Templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-templates.html">Advanced Templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/list-of-nodes.html">List of nodes</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link active" href="/pages/python-interface.html">Python Interface</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/configuration.html">Configuration</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/history-of-mau.html">History of Mau</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Sidebar Nav -->
+    </nav>
+    <!-- End Sidebar -->
+
+    <main class="ml-md-auto col-md-9 col-xl-10 px-4 pt-0 pt-md-11">
+      <div class="row pt-3">
+        <!-- Content Nav -->
+        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#python-interface-1177">Python Interface</a><ul><li class="duik-content-nav__item"><a href="#using-mau-in-pelican-a590">Using Mau in Pelican</a></li></ul></li></ul></div>
+        <!-- End Content Nav -->
+
+        <!-- Content -->
+        <div class="col-xl-10 order-xl-1 duik-content border-bottom">
+          <div><div class="content"></div></div><div class="border-bottom mb-7"><h1>Python Interface</h1></div><div class="border-bottom mb-7"><blockquote class="blockquote"><p>&quot;If you have any questions, your PDA can port into the Henry Hudson information system and use the AI interface to assist you; just use your stylus to write the question or speak it into your PDA&#x27;s microphone.&quot;</p><footer class="blockquote-footer">John Scalzi, <em>Old Man&#x27;s War</em> (2005)</footer></blockquote></div><p>Mau can be used inside any Python project through the object <code>Mau</code>. The following sketches the steps you need to go through. The best way to see that in action is in the code of the <a href="https://github.com/pelican-plugins/mau-reader">Pelican Mau reader plugin</a>.</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="kn">from</span> <span class="nn">mau</span> <span class="kn">import</span> <span class="n">Mau</span><span class="p">,</span> <span class="n">load_visitors</span>
+<span class="kn">from</span> <span class="nn">mau.environment.environment</span> <span class="kn">import</span> <span class="n">Environment</span>
+<span class="kn">from</span> <span class="nn">mau.errors</span> <span class="kn">import</span> <span class="n">MauErrorException</span><span class="p">,</span> <span class="n">print_error</span>
+
+<span class="n">visitor_classes</span> <span class="o">=</span> <span class="n">load_visitors</span><span class="p">()</span>
+<span class="n">visitors</span> <span class="o">=</span> <span class="p">{</span><span class="n">i</span><span class="o">.</span><span class="n">format_code</span><span class="p">:</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">visitor_classes</span><span class="p">}</span>
+
+<span class="bp">self</span><span class="o">.</span><span class="n">environment</span> <span class="o">=</span> <span class="n">Environment</span><span class="p">()</span>
+
+<span class="n">config</span> <span class="o">=</span> <span class="p">{}</span> <span class="c1"># This is a Python dictionary containing the configuration</span>
+<span class="n">output_format</span> <span class="o">=</span> <span class="s2">&quot;html&quot;</span> <span class="c1"># This depends on the output that you want to create</span>
+
+<span class="k">if</span> <span class="n">output_format</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">visitors</span><span class="p">:</span>
+    <span class="k">raise</span> <span class="n">OutputFormatNotSupported</span><span class="p">(</span><span class="n">output_format</span><span class="p">)</span>
+
+<span class="n">visitor_class</span> <span class="o">=</span> <span class="n">visitors</span><span class="p">[</span><span class="n">output_format</span><span class="p">]</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">environment</span><span class="o">.</span><span class="n">setvar</span><span class="p">(</span><span class="s2">&quot;mau.visitor.class&quot;</span><span class="p">,</span> <span class="n">visitor_class</span><span class="p">)</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">environment</span><span class="o">.</span><span class="n">setvar</span><span class="p">(</span><span class="s2">&quot;mau.visitor.format&quot;</span><span class="p">,</span> <span class="n">output_format</span><span class="p">)</span>
+
+<span class="n">mau</span> <span class="o">=</span> <span class="n">Mau</span><span class="p">(</span>
+    <span class="n">source_path</span><span class="p">,</span> <span class="c1"># The source file</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">environment</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="k">with</span> <span class="n">pelican_open</span><span class="p">(</span><span class="n">source_path</span><span class="p">)</span> <span class="k">as</span> <span class="n">text</span><span class="p">:</span>
+        <span class="n">mau</span><span class="o">.</span><span class="n">run_lexer</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+
+    <span class="n">mau</span><span class="o">.</span><span class="n">run_parser</span><span class="p">(</span><span class="n">mau</span><span class="o">.</span><span class="n">lexer</span><span class="o">.</span><span class="n">tokens</span><span class="p">)</span>
+
+    <span class="n">content</span> <span class="o">=</span> <span class="n">mau</span><span class="o">.</span><span class="n">run_visitor</span><span class="p">(</span><span class="n">mau</span><span class="o">.</span><span class="n">parser</span><span class="o">.</span><span class="n">output</span><span class="p">[</span><span class="s2">&quot;content&quot;</span><span class="p">])</span>
+
+    <span class="k">if</span> <span class="n">visitor_class</span><span class="o">.</span><span class="n">transform</span><span class="p">:</span>
+        <span class="n">content</span> <span class="o">=</span> <span class="n">visitor_class</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+
+<span class="k">except</span> <span class="n">MauErrorException</span> <span class="k">as</span> <span class="n">exception</span><span class="p">:</span>
+    <span class="o">...</span> <span class="c1"># Manage exception</span>
+</pre></div></div></div><h2 id="using-mau-in-pelican-a590" class="mt-6">Using Mau in Pelican<a class="js-anchor-link duik-anchorjs-link" href="#using-mau-in-pelican-a590" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>You can use Mau to write posts and pages in Pelican. First you need to install the plugin that enables it</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">pip install pelican-mau-reader
+</pre></div></div></div><p>You can see the updated documentation about the plugin on <a href="https://github.com/pelican-plugins/mau-reader">the project page</a> but overall you just need to follow the instructions in this paragraph.</p><p>The basic usage of the plugin is simple. Every file in your content directory that ends with <code>.mau</code> will be processed by it, and you need to specify metadata using Mau&#x27;s variables under the namespace <code>pelican</code>. For example</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">:pelican.title:This is a post written with Mau
+:pelican.date:2021-02-17 13:00:00
+:pelican.modified:2021-02-17 14:00:00
+:pelican.category:tests
+:pelican.tags:foo, bar, foobar
+:pelican.summary:I have a lot to write
+</pre></div></div></div><p>See <a href="../pages/basic-syntax.html">Basic syntax</a> to learn more about Mau variables.</p><div id="_footnotes"></div>
+        </div>
+        <!-- End Content -->
+      </div>
+
+      <!-- Footer -->
+      <footer class="small py-4">
+        <div class="row">
+          <!-- Copyright -->
+          <div class="col-md-6 text-center text-dark text-md-left mb-3 mb-md-0">
+            &copy; 2024 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
+          </div>
+          <!-- End Copyright -->
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </main>
+  </div>
+</div>
+
+<!-- Go to Top -->
+<a class="js-go-to duik-go-to" href="javascript:;">
+  <span class="fa fa-arrow-up duik-go-to__inner"></span>
+</a>
+<!-- End Go to Top -->
+
+    <!-- JS Global Compulsory -->
+    <script src="../theme/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../theme/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="../theme/vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../theme/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="../theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../theme/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/menu.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+    <script src="../theme/vendor/prism/prism.js"></script>
+
+    <!-- JS -->
+    <script src="../theme/js/main.js"></script>
+    <script src="../theme/js/autocomplete.js"></script>
+    <script src="../theme/js/custom-scrollbar.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title -->
+    <title>The Mau Book - Block Engines and Custom Definitions</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="">
+
+    <!--  Meta tags -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- Google Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../theme/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../theme/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../theme/vendor/prism/prism.css">
+
+    <!-- CSS Template -->
+    <link rel="stylesheet" href="/theme/css/main.min.css?1a97a760">
+
+<!-- Pygments CSS Template -->
+<link rel="stylesheet" href="/theme/css/pygments.min.css?29bb554c">
+    
+  </head>
+  <body class="bg-white">
+
+<!-- Header -->
+<header class="duik-header">
+  <nav class="navbar navbar-dark fixed-top bg-primary flex-nowrap p-0">
+    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The <strong>Mau</strong> Markup Language</a>
+
+    <!-- Header Links -->
+    <ul class="navbar-nav duik-header__nav small text-nowrap flex-row px-3 ml-0 ml-sm-3">
+      <li class="nav-item ml-4">
+        <a class="nav-link" href="https://github.com/Project-Mau/maubook/issues" title="Report an Issue" target="_blank"><i class="fas fa-bug mr-sm-1"></i> <span class="d-none d-lg-inline-block">Found an issue in the docs?</span></a>
+      </li>
+      <li class="nav-item ml-3 ml-sm-5">
+        <a class="btn btn-sm btn-light text-primary" href="https://github.com/Project-Mau" title="Download"><i class="fab fa-github mr-sm-1"></i> Fork on GitHub</a>
+      </li>
+    </ul>
+    <!-- End Header Links -->
+  </nav>
+</header>
+<!-- End Header -->
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <nav class="col-md-3 col-xl-2 bg-light duik-sidebar navbar-expand-md">
+      <div class="d-flex d-md-none justify-content-between mb-5">
+        <!-- Sidebar Search -->
+        <form class="col form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+        <!-- End Sidebar Search -->
+
+        <!-- Responsive Toggle Button -->
+        <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#sidebar-nav" aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+            <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+          </svg>
+        </button>
+        <!-- End Responsive Toggle Button -->
+      </div>
+
+      <!-- Sidebar Nav -->
+      <div class="collapse navbar-collapse" id="sidebar-nav">
+        <div class="js-scrollbar duik-sidebar-sticky">
+          <h5 class="duik-sidebar__heading">maubook</h5>
+          <ul class="duik-sidebar__nav">
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction.html">Introduction</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/install-and-run-mau.html">Install and Run Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/an-overview-of-mau.html">An overview of Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-syntax.html">Basic Syntax</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/formatting-text.html">Formatting text</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/headers.html">Headers</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/lists.html">Lists</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/images.html">Images</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/controls.html">Controls</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/blocks.html">Blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link active" href="/pages/block-engines-and-custom-definitions.html">Block Engines and Custom Definitions</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/footnotes.html">Footnotes</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-groups.html">Block groups</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-code-blocks.html">Source Code Blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-templates.html">Basic Templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-templates.html">Advanced Templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/list-of-nodes.html">List of nodes</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python Interface</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/configuration.html">Configuration</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/history-of-mau.html">History of Mau</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Sidebar Nav -->
+    </nav>
+    <!-- End Sidebar -->
+
+    <main class="ml-md-auto col-md-9 col-xl-10 px-4 pt-0 pt-md-11">
+      <div class="row pt-3">
+        <!-- Content Nav -->
+        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#block-engines-and-custom-definitions-4c31">Block Engines and Custom Definitions</a><ul><li class="duik-content-nav__item"><a href="#block-engines-5f75">Block engines</a><ul><li class="duik-content-nav__item"><a href="#default-7f82">Default</a></li><li class="duik-content-nav__item"><a href="#mau-ef4d">Mau</a></li><li class="duik-content-nav__item"><a href="#raw-2db9">Raw</a></li></ul></li><li class="duik-content-nav__item"><a href="#custom-block-definitions-8b86">Custom block definitions</a><ul><li class="duik-content-nav__item"><a href="#mandatory-arguments-and-defaults-b09a">Mandatory arguments and defaults</a></li><li class="duik-content-nav__item"><a href="#recursive-subtypes-1107">Recursive subtypes</a></li></ul></li><li class="duik-content-nav__item"><a href="#predefined-blocks-f46f">Predefined blocks</a></li><li class="duik-content-nav__item"><a href="#block-definitions-in-configuration-a5ad">Block definitions in configuration</a></li></ul></li></ul></div>
+        <!-- End Content Nav -->
+
+        <!-- Content -->
+        <div class="col-xl-10 order-xl-1 duik-content border-bottom">
+          <div><div class="content"></div></div><div class="border-bottom mb-7"><h1>Block Engines and Custom Definitions</h1></div><div class="border-bottom mb-7"><blockquote class="blockquote"><p>- “Impact minus twenty seconds, guys. . . ” said the computer.</p>
+<p>- “Then turn the bloody engines back on!” bawled Zaphod.</p>
+<p>- “OK, sure thing, guys,” said the computer.</p><footer class="blockquote-footer">Douglas Adams, <em>The Hitchhiker&#x27;s Guide to the Galaxy</em> (1979)</footer></blockquote></div><h2 id="block-engines-5f75" class="mt-6">Block engines<a class="js-anchor-link duik-anchorjs-link" href="#block-engines-5f75" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>Mau blocks have an advanced feature called <em>block engine</em> that rules the way the system processes the primary and secondary content.</p><p>Mau currently defines the following engines:</p><ul><li><code>default</code></li><li><code>footnotes</code></li><li><code>group</code></li><li><code>mau</code></li><li><code>raw</code></li><li><code>source</code></li></ul><p>When a block doesn&#x27;t define a specific engine the <code>default</code> one is used.</p><p>The engines <code>footnotes</code>, <code>group</code>, and <code>source</code> will be shown in detail in the next chapters.</p><h3 id="default-7f82" class="mt-6">Default<a class="js-anchor-link duik-anchorjs-link" href="#default-7f82" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>As we saw in the previous chapter, the engine <code>default</code> processes the content of the block as Mau code using the variables defined previously in the document.</p><p>The text of the block is part of the Mau document, so variables, headers, and footnotes defined in the block become part of the document just as if they were defined outside the block.</p><p>This engine is used when no other engine is defined explicitly and is useful every time we need to customise the way the content is rendered in the final format but we want to keep the content as part of the document.</p><p>Quotes and admonitions use the default engine.</p><h3 id="mau-ef4d" class="mt-6">Mau<a class="js-anchor-link duik-anchorjs-link" href="#mau-ef4d" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>As we saw previously, the engine <code>default</code> processes the content as Mau code and adds variables, headers and footnotes in the current document. The engine <code>mau</code> instead treats primary and secondary content as isolated. You can use this engine in particular to keep headers from being collected and shown into the ToC.</p><p>For example, using a command <code>::toc:</code> in a block rendered by the engine <code>mau</code> will include only the headers defined in the block itself.</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">[engine=mau]
+----
+= Main section
+
+== Secondary section
+
+---
+::toc:
+----
+</pre></div></div></div><div><div class="content"><div class="duik-callout duik-callout-success" role="callout"><div class="border-bottom mb-7"><h1>Main section</h1></div>
+<h2 id="secondary-section-3cbf" class="mt-6">Secondary section<a class="js-anchor-link duik-anchorjs-link" href="#secondary-section-3cbf" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<hr>
+<div><ul><li><a href="#main-section-06bc">Main section</a><ul><li><a href="#secondary-section-3cbf">Secondary section</a></li></ul></li></ul></div></div></div></div><p>Please note that with this engine the content of the block is still rendered in the current document. This means that with output formats like TeX that create their own TOC automatically such headers will still be part of the main document.</p><h3 id="raw-2db9" class="mt-6">Raw<a class="js-anchor-link duik-anchorjs-link" href="#raw-2db9" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>The engine <code>raw</code> is useful every time we want to include text in the output format directly, as this engine doesn&#x27;t process the content at all. For example, you might want to add custom HTML code.</p><div><div class="content"><p>The following is an example from the UI kit I used for this website</p>
+<div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">[engine=raw]
+----
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;
+  Notifications &lt;span class=&quot;badge badge-light ml-1&quot;&gt;4&lt;/span&gt;
+&lt;/button&gt;
+----
+</pre></div></div></div>
+<div class="duik-callout duik-callout-success" role="callout"><div><div class="content"><button type="button" class="btn btn-primary">
+  Notifications <span class="badge badge-light ml-1">4</span>
+</button></div></div></div></div></div><p>Please note that while the content of the block is not processed by Mau it is still rendered as any other block through templates. See <a href="../pages/basic-templates.html">Basic templates</a> to find out how to include custom content without any wrapper.</p><h2 id="custom-block-definitions-8b86" class="mt-6">Custom block definitions<a class="js-anchor-link duik-anchorjs-link" href="#custom-block-definitions-8b86" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>As we saw previously, blocks have many attributes that you can set on them. In <a href="../pages/basic-templates.html">Basic templates</a> and <a href="../pages/advanced-templates.html">Advanced templates</a> we will also see how you can create and use custom attributes.</p><p>Setting the same parameters over and over can become tedious and error prone, so Mau provides a way to define blocks through the command <code>::defblock:ALIAS, ARGUMENTS</code>.</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">::defblock:python, engine=source, language=python
+
+[*python]
+----
+class MyException(Exception):
+    pass
+----
+</pre></div></div></div><p>This is equivalent to</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">[engine=source, language=python]
+----
+class MyException(Exception):
+    pass
+----
+</pre></div></div></div><h3 id="mandatory-arguments-and-defaults-b09a" class="mt-6">Mandatory arguments and defaults<a class="js-anchor-link duik-anchorjs-link" href="#mandatory-arguments-and-defaults-b09a" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>The full syntax of a block definition is</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">::defblock:ALIAS, [*SUBTYPE], [UNNAMED ARGUMENTS], [NAMED ARGUMENTS]
+</pre></div></div></div><p>but the aliasing mechanism doesn&#x27;t work as a pure substitution.</p><ul><li><code>SUBTYPE</code> is going to be the block subtype. If missing, the subtype will not be set on the block.</li><li><code>UNNAMED ARGUMENTS</code> are interpreted as <strong>mandatory arguments</strong>.</li><li><code>NAMED ARGUMENTS</code> are interpreted as <strong>defaults values</strong>.</li></ul><p>For example, <code>::defblock:alias, *type1, name</code> means that whenever we use <code>*alias</code> as the block subtype we also have to provide either an unnamed argument (which will be assigned the key <code>name</code>) or a named argument called <code>name</code>.</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">::defblock:alias, arg1, key1=value1
+
+[*alias] &lt;--------------------------- This is invalid, as it is 
+----                                  missing the unnamed argument
+----
+
+[*alias, alert] &lt;-------------------- This is valid.
+----                                  Unnamed arguments: []
+----                                  Named arguments: {&quot;arg1&quot;: &quot;alert&quot;, &quot;key1&quot;: &quot;value1&quot;}
+
+[*alias, alert, red]  &lt;-------------- This is valid.
+----                                  Unnamed arguments: [&quot;red&quot;]
+----                                  Named arguments: {&quot;arg1&quot;: &quot;alert&quot;, &quot;key1&quot;: &quot;value1&quot;}
+
+[*alias, alert, red, key1=value2] &lt;-- This is valid.
+----                                  Unnamed arguments: [&quot;red&quot;]
+----                                  Named arguments: {&quot;arg1&quot;: &quot;alert&quot;, &quot;key1&quot;: &quot;value2&quot;}
+
+[*alias, red, arg1=alert] &lt;---------- This is valid.
+----                                  Unnamed arguments: [&quot;red&quot;]
+----                                  Named arguments: {&quot;arg1&quot;: &quot;alert&quot;, &quot;key1&quot;: &quot;value1&quot;}.
+</pre></div></div></div><p>As you can see, block definitions do not work exactly like functions in programming languages. Block attributes can always contain any number of unnamed and named arguments, and the block definition just specifies which <strong>named ones</strong> we are always expecting to see.</p><h3 id="recursive-subtypes-1107" class="mt-6">Recursive subtypes<a class="js-anchor-link duik-anchorjs-link" href="#recursive-subtypes-1107" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>Block definitions are not recursive, so it is perfectly fine to write a definition like</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">::defblock:alias, *alias, engine=raw, classes=&quot;myclass1,myclass2&quot;
+</pre></div></div></div><p>In this case the syntax <code>[*alias]</code> will be converted to <code>[*alias, engine=raw, classes="myclass1,myclass2]</code> and the block will still have the subtype <code>alias</code>.</p><h2 id="predefined-blocks-f46f" class="mt-6">Predefined blocks<a class="js-anchor-link duik-anchorjs-link" href="#predefined-blocks-f46f" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>Mau provides some aliases out of the box, namely <code>source</code>, <code>footnote</code>, and <code>admonition</code>. While these are created directly in the Python soruce code, they are equivalent to the following definitions</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">::defblock:source, language=text, engine=source
+TODO
+::defblock:admonition, *admonition, class, icon, label
+</pre></div></div></div><p>The built-in block type <code>quote</code> is not an alias and doesn&#x27;t contain additional attributes, so it works just like a default block.</p><h2 id="block-definitions-in-configuration-a5ad" class="mt-6">Block definitions in configuration<a class="js-anchor-link duik-anchorjs-link" href="#block-definitions-in-configuration-a5ad" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>You can create block definitions through Mau&#x27;s configuration setting the variable <code>mau.parser.block_definitions</code></p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">&quot;mau&quot; : {
+    &quot;parser&quot;: {
+        &quot;block_definitions&quot;: {
+            &quot;alias&quot;: {
+                &quot;subtype&quot;: &quot;type&quot;,
+                &quot;mandatory_args&quot;: [&quot;arg1&quot;, &quot;arg2&quot;],
+                &quot;defaults&quot;: {&quot;key1&quot;: &quot;value1&quot;},
+            },
+        },
+    }
+}
+</pre></div></div></div><div id="_footnotes"></div>
+        </div>
+        <!-- End Content -->
+      </div>
+
+      <!-- Footer -->
+      <footer class="small py-4">
+        <div class="row">
+          <!-- Copyright -->
+          <div class="col-md-6 text-center text-dark text-md-left mb-3 mb-md-0">
+            &copy; 2024 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
+          </div>
+          <!-- End Copyright -->
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </main>
+  </div>
+</div>
+
+<!-- Go to Top -->
+<a class="js-go-to duik-go-to" href="javascript:;">
+  <span class="fa fa-arrow-up duik-go-to__inner"></span>
+</a>
+<!-- End Go to Top -->
+
+    <!-- JS Global Compulsory -->
+    <script src="../theme/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../theme/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="../theme/vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../theme/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="../theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../theme/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/menu.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+    <script src="../theme/vendor/prism/prism.js"></script>
+
+    <!-- JS -->
+    <script src="../theme/js/main.js"></script>
+    <script src="../theme/js/autocomplete.js"></script>
+    <script src="../theme/js/custom-scrollbar.js"></script>
+
+  </body>
+</html>

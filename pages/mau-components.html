@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title -->
+    <title>The Mau Book - Mau Components</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="">
+
+    <!--  Meta tags -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- Google Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../theme/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../theme/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../theme/vendor/prism/prism.css">
+
+    <!-- CSS Template -->
+    <link rel="stylesheet" href="/theme/css/main.min.css?2d697538">
+
+  </head>
+  <body class="bg-white">
+
+<!-- Header -->
+<header class="duik-header">
+  <nav class="navbar navbar-dark fixed-top bg-primary flex-nowrap p-0">
+    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The <strong>Mau</strong> Markup Language</a>
+
+    <!-- Header Links -->
+    <ul class="navbar-nav duik-header__nav small text-nowrap flex-row px-3 ml-0 ml-sm-3">
+      <li class="nav-item ml-4">
+        <a class="nav-link" href="https://github.com/Project-Mau/maubook/issues" title="Report an Issue" target="_blank"><i class="fas fa-bug mr-sm-1"></i> <span class="d-none d-lg-inline-block">Found an issue in the docs?</span></a>
+      </li>
+      <li class="nav-item ml-3 ml-sm-5">
+        <a class="btn btn-sm btn-light text-primary" href="https://github.com/Project-Mau" title="Download"><i class="fab fa-github mr-sm-1"></i> Fork on GitHub</a>
+      </li>
+    </ul>
+    <!-- End Header Links -->
+  </nav>
+</header>
+<!-- End Header -->
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <nav class="col-md-3 col-xl-2 bg-light duik-sidebar navbar-expand-md">
+      <div class="d-flex d-md-none justify-content-between mb-5">
+        <!-- Sidebar Search -->
+        <form class="col form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+        <!-- End Sidebar Search -->
+
+        <!-- Responsive Toggle Button -->
+        <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#sidebar-nav" aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+            <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+          </svg>
+        </button>
+        <!-- End Responsive Toggle Button -->
+      </div>
+
+      <!-- Sidebar Nav -->
+      <div class="collapse navbar-collapse" id="sidebar-nav">
+        <div class="js-scrollbar duik-sidebar-sticky">
+          <h5 class="duik-sidebar__heading">maubook</h5>
+          <ul class="duik-sidebar__nav">
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction.html">Introduction</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/install-and-run-mau.html">Install and Run Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-syntax.html">Basic Syntax</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link active" href="/pages/mau-components.html">Mau Components</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/text-formatting.html">Text Formatting</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/links.html">Links</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/headers.html">Headers</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/variables.html">Variables</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/lists.html">Lists</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/images.html">Images</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/code-blocks.html">Code Blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/footnotes.html">Footnotes</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/blocks.html">Blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/built-in-blocks-and-other-features.html">Built-in Blocks and Other Features</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-engines-and-custom-definitions.html">Block Engines and Custom Definitions</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-templates.html">Basic Templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-templates.html">Advanced Templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/list-of-components.html">List of Components</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python Interface</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/configuration.html">Configuration</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/history-of-mau.html">History of Mau</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Sidebar Nav -->
+    </nav>
+    <!-- End Sidebar -->
+
+    <main class="ml-md-auto col-md-9 col-xl-10 px-4 pt-0 pt-md-11">
+      <div class="row pt-3">
+        <!-- Content Nav -->
+        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#mau-components-5ccf">Mau Components</a><ul><li class="duik-content-nav__item"><a href="#components-and-rendering-6bf6">Components and rendering</a></li><li class="duik-content-nav__item"><a href="#arguments-aaff">Arguments</a><ul><li class="duik-content-nav__item"><a href="#named-and-unnamed-arguments-ea48">Named and unnamed arguments</a></li><li class="duik-content-nav__item"><a href="#tags-e9ff">Tags</a></li><li class="duik-content-nav__item"><a href="#subtype-2494">Subtype</a></li><li class="duik-content-nav__item"><a href="#arguments-and-rendering-26d6">Arguments and rendering</a></li></ul></li></ul></li></ul></div>
+        <!-- End Content Nav -->
+
+        <!-- Content -->
+        <div class="col-xl-10 order-xl-1 duik-content border-bottom">
+          <div><div class="content"></div></div><div class="border-bottom mb-7"><h1>Mau Components</h1></div><div class="border-bottom mb-7"><blockquote class="blockquote"><p>The electric mechanism, within its compellingly authentic-style gray pelt, gurgled and blew bubbles, its vidlenses glassy, its metal jaws locked together. This had always amazed him, these “disease” circuits built into false animals; the construct which he now held on his lap had been put together in such a fashion that when a primary component misfired, the whole thing appeared-not broken-but organically ill.</p><footer class="blockquote-footer">Philip K. Dick, <em>Do Androids Dream of Electric Sheep?</em> (1968)</footer></blockquote></div><p>Mau syntax contains several components. Some of these can be found on a single line of a page, while some can be found inside a block of text. In the previous section we already saw that a <strong>paragraph</strong> is one of the page components, but the full list is</p><div><div class="content"><ul><li><strong>Horizontal rule</strong>: a line that contains three hyphens <code>---</code></li><li><strong>Single line comment</strong>: a line preceded by the characters <code>//</code></li><li><strong>Multi line comment</strong>: any block of lines surrounded by the comment fence <code>////</code></li><li><strong>Variable definition</strong>: a line that begins with a name surrounded by colons, e.g. <code>:var_name:</code></li><li><strong>Command</strong>: a line that begins with a command name in the form <code>::command_name:</code></li><li><strong>Title</strong>: a line that begins with a dot, e.g. <code>.Title</code></li><li><strong>Arguments</strong>: a line that is completely surrounded by square brackets, e.g. <code>[arguments]</code></li><li><strong>Header</strong>: a line preceded by one or more symbols <code>=</code></li><li><strong>Block</strong>: any group of lines surrounded by a block fence of four identical characters, e.g. <code>----</code></li><li><strong>Content</strong>: one or more URIs preceded by <code><<</code></li><li><strong>List</strong>: a sequence of lines each one of them preceded by one or more symbols <code>#</code> or <code>*</code></li><li><strong>Paragraph</strong>: any block of text preceded by an empty line</li></ul>
+<p>Inside paragraphs you can instead have the following special syntax</p>
+<ul><li><strong>Styled text</strong>: any sequence of words surrounded by <code>_underscores_</code>, <code>*stars*</code>, <code>~tildes~</code>, or <code>^carets^</code></li><li><strong>Verbatim text</strong>: any sequence of words surrounded by <code>`backticks`</code></li><li><strong>Macros</strong>: functions that come in the form <code>[name](arguments)</code></li></ul></div></div><p>Finally, there are some components that are created automatically, such as callouts and list entries, which will be introduced together with other components.</p><h2 id="components-and-rendering-6bf6" class="mt-6">Components and rendering<a class="js-anchor-link duik-anchorjs-link" href="#components-and-rendering-6bf6" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><div><div class="content"><p>As in other markup languages like Markdown, each Mau component has a default rendering. For example, the syntax <code>_some text_</code> will be rendered in HTML as <code>&lt;em&gt;some text&lt;/em&gt;</code>, but the real power of Mau is that any component can be connected to a custom template that changes the rendering. For example, I might decide that <code>_some text_</code> should be rendered as <code>&lt;span class="red"&gt;SOME TEXT&lt;/span&gt;</code>.</p>
+<p>Moreover, components can use different templates based on arguments or on the parent node that contains them. For example, I might decide that <code>_some text_</code> should be rendered as <code>&lt;em&gt;some text&lt;/em&gt;</code> in normal paragraphs and as <code>&lt;span class="red"&gt;SOME TEXT&lt;/span&gt;</code> in a quote.</p></div></div><p>The template engine will be explained in depth in the second part of the documentation.</p><h2 id="arguments-aaff" class="mt-6">Arguments<a class="js-anchor-link duik-anchorjs-link" href="#arguments-aaff" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>Some Mau components accept arguments, which are not too different from standard function arguments in programming languages. The most important thing to remember is that Mau values are always strings, so arguments do not really have types.</p><p>Arguments can appear between round brackets <code>()</code>, square brackets <code>[]</code>, or directly after a command, depending on the component.</p><ul><li>Macros receive arguments between round brackets: e.g. <code>[macro](argument1, argument2, ...)</code>.</li><li>Commands receive some arguments directly after the final colon: e.g. <code>::command:argument1, argument2, ...</code>.</li><li>Horizontal rules, commands, headers, blocks, content, lists, and paragraphs receive arguments on a separate line, surrounded by square brackets, e.g. <code>[argument1, argument2, ...]</code>.</li></ul><p>In the next chapters there will be plenty of examples to show how to pass arguments and to clarify why commands can receive them in two different ways.</p><h3 id="named-and-unnamed-arguments-ea48" class="mt-6">Named and unnamed arguments<a class="js-anchor-link duik-anchorjs-link" href="#named-and-unnamed-arguments-ea48" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>Arguments can be <strong>unnamed</strong> or <strong>named</strong>. An unnamed argument has just a value, for example <code>html</code>, while a named one has a key and a value linked by an equal sign, like <code>language=html</code>. There can&#x27;t be a space between the key and the value, so an argument like <code>language = html</code> is invalid.</p><p>Multiple arguments are separated by commas, optionally followed by one or more spaces. So, <code>source,html</code> and <code>source, html</code> are both valid, and the same is valid for named arguments, as <code>source,language=html</code> and <code>source, language=html</code> are equally accepted by the parser.</p><p>Unnamed arguments can never follow named ones, so the syntax <code>language=html, source</code> is invalid.</p><p>If an argument contains one or more spaces or commas you need to surround it with quotes, e.g. <code>attribution="J.R.R. Tolkien"</code> or <code>classes="class1,class2"</code>. If arguments are surrounded by round or square bracket, you have to use quotes whenever the value contains the closing bracket. E.g. <code>(attribution="The (real) author")</code>. If you need to pass quotes as value of an argument you need to escape them, e.g. <code>attribution="The so-called \"author\""</code>.</p><h3 id="tags-e9ff" class="mt-6">Tags<a class="js-anchor-link duik-anchorjs-link" href="#tags-e9ff" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>Tags are special arguments prefixed by <code>#</code>. Whenever Mau finds an unnamed argument that starts with <code>#</code> it will strip the prefix and collect the argument in a separate list called <code>tags</code>. Tags are useful to categorise elements and apply special formatting.</p><p>For example the arguments list <code>source, #custom, red, language=html</code> will internally be parsed as</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">Unnamed arguments: source, red
+Named arguments: language=html
+Tags: custom
+</pre></div></div></div><p>Please note that the parsed name of the tag doesn&#x27;t contain the hash mark <code>#</code>.</p><h3 id="subtype-2494" class="mt-6">Subtype<a class="js-anchor-link duik-anchorjs-link" href="#subtype-2494" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>The first unnamed argument whose value starts with <code>*</code> is interpreted as the subtype of the component and plays an important role in the choice of the rendering template, as will be clarified later in the documentation. For example, the syntax <code>*ctype1, arg1, arg2</code> will be parsed as</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">Unnamed arguments: arg1, arg2
+Named arguments: 
+Tags:
+Subtype: ctype1
+</pre></div></div></div><p>You don&#x27;t need to specify the subtype, but you should have maximum one of them. If you specify multiple ones Mau will at the moment keep only the first one. For example, the syntax <code>[*ctype1, *ctpe2, arg1, arg2]</code> will be parsed as the previous one and subtype <code>ctype2</code> will be lost.</p><h3 id="arguments-and-rendering-26d6" class="mt-6">Arguments and rendering<a class="js-anchor-link duik-anchorjs-link" href="#arguments-and-rendering-26d6" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><div><div class="content"><p>When a component is parsed, it is transformed into a node that is then passed to the rendering engine. Each node, whatever the component, has its arguments stored in the attributes <code>args</code>, <code>kwargs</code>, <code>tags</code>, and <code>subtypes</code>. See <a href="../pages/basic-templates.html">Basic templates</a> and <a href="../pages/list-of-components.html">List of components</a> for more information.</p></div></div><div id="_footnotes"></div>
+        </div>
+        <!-- End Content -->
+      </div>
+
+      <!-- Footer -->
+      <footer class="small py-4">
+        <div class="row">
+          <!-- Copyright -->
+          <div class="col-md-6 text-center text-dark text-md-left mb-3 mb-md-0">
+            &copy; 2024 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
+          </div>
+          <!-- End Copyright -->
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </main>
+  </div>
+</div>
+
+<!-- Go to Top -->
+<a class="js-go-to duik-go-to" href="javascript:;">
+  <span class="fa fa-arrow-up duik-go-to__inner"></span>
+</a>
+<!-- End Go to Top -->
+
+    <!-- JS Global Compulsory -->
+    <script src="../theme/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../theme/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="../theme/vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../theme/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="../theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../theme/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/menu.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+    <script src="../theme/vendor/prism/prism.js"></script>
+
+    <!-- JS -->
+    <script src="../theme/js/main.js"></script>
+    <script src="../theme/js/autocomplete.js"></script>
+    <script src="../theme/js/custom-scrollbar.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<div class="mb-3 mt-1">
+  {% if title %}
+<div class="title">{{ title }}</div>
+{% endif %}
+
+div.code div.title {
+    background: #e1e1e1;
+}
+
+h1, .h1 {
+  font-size: 2.3rem;
+}
+
+h2, .h2 {
+  font-size: 1.75rem;
+}
+
+h3, .h3 {
+    font-size: 1.4rem;
+    color: #9b9b9b;
+}
+
+h4, .h4 {
+  font-size: 1.25rem;
+}
+
+h5, .h5 {
+    font-size: 1rem;
+}
+
+h6, .h6 {
+    font-size: 0.75rem;
+}
+
+div.duik-callout p:last-child {
+    margin-bottom: 0;
+}

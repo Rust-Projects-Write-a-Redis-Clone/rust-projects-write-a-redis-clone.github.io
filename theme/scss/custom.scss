@@ -1,0 +1,256 @@
+@use "sass:color";
+@use "variables";
+
+.chapter-title {
+    text-align: center;
+    color: variables.$color-primary;
+}
+
+.blockquote {
+    font-size: 1.1em;
+
+    .blockquote-footer {
+        font-size: 0.8em;
+    }
+}
+
+.alert-aside {
+    background-color: color.mix(white, variables.$color-primary, 90%);
+    border-color: color.mix(white, variables.$color-primary, 70%);
+
+    .alert-heading {
+        color: variables.$color-primary;
+    }
+}
+
+.alert-warning {
+    background-color: #f9cece;
+    border-color: variables.$error;
+
+    // .alert-heading {
+    //     color: black;
+    // }
+}
+
+.alert-stage {
+    background-color: #e6e6fd;
+    border-color: #649962;
+    border-width: 3px;
+
+    .alert-heading {
+        color: #649962;
+    }
+}
+
+.alert-github {
+    display: flex;
+    align-items: stretch;
+    padding: 0;
+    overflow: hidden;
+    background-color: color.mix(white, variables.$color-primary, 90%);
+    border-color: variables.$color-primary;
+
+    .alert-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 1.25rem;
+        background-color: variables.$color-primary;
+        color: white;
+        font-size: 1.75rem;
+    }
+
+    .alert-text {
+        flex: 1;
+        padding: 0.75rem 1rem;
+
+        h5 {
+            margin: 0 0 0.25rem 0;
+            font-size: 1.1em;
+            color: variables.$color-primary;
+        }
+
+        a {
+            word-break: break-all;
+        }
+    }
+}
+
+ul li {
+    margin-bottom: 0.3em;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+    color: variables.$dark-grey;
+}
+
+h4 {
+    font-size: 1.8em;
+    color: variables.$dark-grey;
+}
+
+h5 {
+    font-size: 1.6em;
+    color: variables.$dark-grey;
+}
+
+h6 {
+    font-size: 1.4em;
+    color: variables.$dark-grey;
+}
+
+h2, h3, h4, h5, h6 {
+    .header-anchor {
+        margin-left: 0.4em;
+        color: variables.$light-grey;
+        text-decoration: none;
+        font-weight: normal;
+        opacity: 0;
+        transition: opacity 0.15s ease-in-out;
+    }
+
+    &:hover .header-anchor {
+        opacity: 1;
+    }
+}
+
+.doc-sidebar {
+    position: relative;
+}
+
+.sidebar-heading {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #494d55;
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+}
+
+.page-toc {
+    top: 1rem;
+    align-self: flex-start;
+    font-size: 0.9em;
+    max-height: calc(100vh - 2rem);
+    overflow-y: auto;
+
+    ul {
+        list-style: none;
+        padding-left: 1rem;
+        margin-top: 0.6em;
+    }
+
+    > ul {
+        padding-left: 0;
+    }
+
+    li {
+        margin-bottom: 0.6em;
+    }
+
+    a {
+        color: variables.$dark-grey;
+        text-decoration: none;
+
+        &:hover {
+            color: variables.$color-primary;
+        }
+    }
+}
+
+
+code {
+    color: variables.$color-red;
+    font-size: 14px;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    display: inline-block;
+}
+
+.code {
+    border: 1px solid variables.$light-grey;
+    border-radius: 0.375rem;
+    overflow: hidden;
+
+    .title {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid variables.$light-grey;
+
+        code {
+            background: transparent;
+            color: inherit;
+            font-size: inherit;
+            padding: 0;
+        }
+    }
+
+    pre {
+        margin: 0;
+    }
+}
+
+.code.code-normal {
+    .title {
+        background-color: #ffdf00;
+    }
+}
+
+.code.code-detail {
+    .title {
+        background-color: #bfb9c5;
+    }
+}
+
+.code.code-broken {
+    .title {
+        background-color: #f9cece;
+    }
+}
+
+.code.code-terminal {
+    pre {
+        background: #d7d7d7;
+    }
+}
+
+hr {
+    margin: 3em 8em;
+}
+
+.hll-remove {
+    background: #f9cece;
+}
+
+.hll-add {
+    background: #d3ffd3;
+}
+
+.hll-default {
+    background: #fef4b7;
+}
+
+.hll-anchor {
+    background: #e6e6fd;
+}
+
+.page-wrapper {
+    img {
+        margin-bottom: 3em;
+    }
+}
+
+.landing-page {
+    .header {
+        padding: 40px 0;
+    }
+}

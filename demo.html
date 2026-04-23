@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title -->
+    <title>The Mau Book - Demo</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="">
+
+    <!--  Meta tags -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- Google Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="./theme/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="./theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="./theme/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="./theme/vendor/prism/prism.css">
+
+    <!-- CSS Template -->
+    <link rel="stylesheet" href="/theme/css/main.min.css?1a97a760">
+
+<!-- Pygments CSS Template -->
+<link rel="stylesheet" href="/theme/css/pygments.min.css?57c0a6fd">
+    
+  </head>
+  <body class="bg-white">
+
+<!-- Header -->
+<header class="duik-header">
+  <!-- Navbar -->
+  <nav class="js-navbar-scroll navbar navbar-expand-lg navbar-dark bg-primary-md fixed-top flex-nowrap transition-bg-03s"
+       data-onscroll-classes="bg-primary"
+       data-offset-value="50">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">The <strong>Mau</strong> Markup Language</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse my-3 my-lg-0" id="navbarCollapse">
+        <!-- Header Links -->
+        <ul class="navbar-nav mr-lg-auto ml-lg-2 ml-xl-4">
+          <li class="js-scroll-nav nav-item mx-lg-1 mx-xl-2 mb-2 mb-lg-0">
+            <a class="nav-link" href="#demos">Examples</a>
+          </li>
+          <li class="nav-item mx-lg-1 mx-xl-2 mb-2 mb-lg-0">
+            <a class="nav-link" href="pages/introduction.html">Documentation</a>
+          </li>
+        </ul>
+        <!-- End Header Links -->
+
+        <!-- Header Links 2 -->
+        <ul class="navbar-nav align-items-lg-center">
+          <li class="nav-item ml-lg-3 ml-xl-5 my-2 my-lg-0">
+            <a class="btn btn-sm btn-light text-primary" href="https://github.com/Project-Mau">
+              <i class="fab fa-github mr-1"></i> Fork on GitHub
+            </a>
+          </li>
+        </ul>
+        <!-- End Header Links 2 -->
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+</header>
+<!-- End Header -->
+
+<!-- Promo Section -->
+<section class="duik-promo gradient-primary text-center">
+  <div class="container duik-promo-container">
+    <div class="d-flex justify-content-center position-relative mh-35rem pt-11 py-6">
+      <div class="w-md-75 w-lg-50 mt-10">
+        <h1 class="h2 text-white mb-3">A demo of the <strong>Mau</strong> Markup Language</h1>
+        <p class="font-weight-light small text-center">Some examples of what Mau can do</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SVG BG -->
+  <svg class="position-absolute bottom-0 left-0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 323" enable-background="new 0 0 1920 323" xml:space="preserve">
+    <polygon fill="#ffffff" style="fill-opacity: .05;" points="-0.5,322.5 -0.5,121.5 658.3,212.3 "></polygon>
+    <polygon fill="#ffffff" style="fill-opacity: .1;" points="-2,323 1920,323 1920,-1 "></polygon>
+  </svg>
+  <!-- End SVG BG -->
+
+  <!-- SVG BG Separator -->
+  <svg class="position-absolute bottom-0 left-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 300">
+    <path id="Path_1" fill="#fff" data-name="Path 1" d="M0,1081.586H1920v-300Z" transform="translate(0 -781.586)"/>
+  </svg>
+  <!-- SVG BG Separator -->
+</section>
+<!-- End Promo Section -->
+
+<main>
+
+  <section class="demo pt-5 pb-5"><div class="container"><div class="w-75 mx-auto text-center mb-5"><h2 class="h3 text-center">Text styles</h2><p>Text can be style using simple inline syntax.</p></div><div class="row mb-7"><div class="col-lg-6 border border-secondary"><div class="mx-5 py-5"><h3 class="h4 mb-5 text-center">Mau source</h2><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre>Stars identify *strong* text.
+
+Underscores for _emphasized_ text.
+
+Carets for ^superscript^ and tildes for ~subscript~.
+
+Backticks are used for `verbatim` text.
+</pre></div></div></div></div></div><div class="col-lg-6 border border-success"><div class="mx-5 py-5"><h3 class="h4 mb-5 text-center">Mau output</h2><p>Stars identify <strong>strong</strong> text.</p>
+<p>Underscores for <em>emphasized</em> text.</p>
+<p>Carets for <sup>superscript</sup> and tildes for <sub>subscript</sub>.</p>
+<p>Backticks are used for <code>verbatim</code> text.</p></div></div></div></div></section><section class="demo pt-5 pb-5"><div class="container"><div class="w-75 mx-auto text-center mb-5"><h2 class="h3 text-center">Paragraphs</h2><p>Paragraphs of text can contain style and macros.</p></div><div class="row mb-7"><div class="col-lg-6 border border-secondary"><div class="mx-5 py-5"><h3 class="h4 mb-5 text-center">Mau source</h2><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre>Paragraphs are separated by empty lines.
+
+Paragraphs can contain macros.
+The source code can be found
+at [link](https://github.com/Project-Mau/mau).
+</pre></div></div></div></div></div><div class="col-lg-6 border border-success"><div class="mx-5 py-5"><h3 class="h4 mb-5 text-center">Mau output</h2><p>Paragraphs are separated by empty lines.</p>
+<p>Paragraphs can contain macros. The source code can be found at <a href="https://github.com/Project-Mau/mau">https://github.com/Project-Mau/mau</a>.</p></div></div></div></div></section><section class="demo pt-5 pb-5"><div class="container"><div class="w-75 mx-auto text-center mb-5"><h2 class="h3 text-center">Variables</h2><p>Variables can be defined inside and outside Mau documents and used to customise the output.</p></div><div class="row mb-7"><div class="col-lg-6 border border-secondary"><div class="mx-5 py-5"><h3 class="h4 mb-5 text-center">Mau source</h2><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre>:answer:42
+:+trueflag:
+
+Mau supports variables. The answer is {answer}.
+
+Macros can render
+[@if:trueflag:&amp;true](text conditionally, whatever).
+</pre></div></div></div></div></div><div class="col-lg-6 border border-success"><div class="mx-5 py-5"><h3 class="h4 mb-5 text-center">Mau output</h2><p>Mau supports variables. The answer is 42.</p>
+<p>Macros can render text conditionally.</p></div></div></div></div></section><section class="demo pt-5 pb-5"><div class="container"><div class="w-75 mx-auto text-center mb-5"><h2 class="h3 text-center">Headers and footnotes</h2><p>Mau has full support for headers and footnotes, and provides commands to insert objects like the ToC.</p></div><div class="row mb-7"><div class="col-lg-6 border border-secondary"><div class="mx-5 py-5"><h3 class="h4 mb-5 text-center">Mau source</h2><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre>= Mau has headers
+
+== Mau has subheaders
+
+A ToC can be created with
+
+::toc:
+
+Paragraphs can contain footnotes[footnote](note).
+
+[*footnote, note]
+====
+This is a footnote.
+====
+
+::footnotes:
+</pre></div></div></div></div></div><div class="col-lg-6 border border-success"><div class="mx-5 py-5"><h3 class="h4 mb-5 text-center">Mau output</h2><h1 id="mau-has-headers-c887" class="mt-6">Mau has headers</h1>
+<h2 id="mau-has-subheaders-358a" class="mt-6">Mau has subheaders</h2>
+<p>A ToC can be created with</p>
+<div><ul><li><a href="#mau-has-headers-c887">Mau has headers</a><ul><li><a href="#mau-has-subheaders-358a">Mau has subheaders</a></li></ul></li><li><a href="#templates-can-transform-content-6347">Templates can transform content</a><ul><li><a href="#and-radically-change-the-output-a214">And radically change the output!</a></li></ul></li><li><a href="#templates-can-transform-content-6347">Templates can transform content</a><ul><li><a href="#and-radically-change-the-output-a214">And radically change the output!</a></li></ul></li></ul></div>
+<p>Paragraphs can contain footnotes<sup>[<a id="ref-footnote-1-ab70a1cc" href="#cnt-footnote-1-ab70a1cc">1</a>]</sup>.</p>
+<div id="_footnotes"><div id="cnt-footnote-1-ab70a1cc"><a href="#ref-footnote-1-ab70a1cc">1</a>  <p>This is a footnote.</p></div></div></div></div></div></div></section><section class="demo pt-5 pb-5"><div class="container"><div class="w-75 mx-auto text-center mb-5"><h2 class="h3 text-center">Lists</h2><p>Mau lists are very flexible and can be easily interrupted and restarted.</p></div><div class="row mb-7"><div class="col-lg-6 border border-secondary"><div class="mx-5 py-5"><h3 class="h4 mb-5 text-center">Mau source</h2><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre># Lists can be
+# Ordered
+** Or unordered
+** Both with multiple levels
+
+And can be interrupted
+
+[start=auto]
+# And restarted
+# Automatically
+</pre></div></div></div></div></div><div class="col-lg-6 border border-success"><div class="mx-5 py-5"><h3 class="h4 mb-5 text-center">Mau output</h2><ol start=1><li>Lists can be</li><li>Ordered<ul><li>Or unordered</li><li>Both with multiple levels</li></ul></li></ol>
+<p>And can be interrupted</p>
+<ol start=3><li>And restarted</li><li>Automatically</li></ol></div></div></div></div></section><section class="demo pt-5 pb-5"><div class="container"><div class="w-75 mx-auto text-center mb-5"><h2 class="h3 text-center">Templates</h2><p>The true power of Mau is the use of multiple visitors and templating engines. Jinja templates can be used to render content in completely different ways depending on the context.</p></div><div class="row mb-7"><div class="col-lg-6 border border-secondary"><div class="mx-5 py-5"><h3 class="h4 mb-5 text-center">Mau source</h2><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre>= Templates can transform content
+
+== And radically change the output!
+
+[#alternate]
+= Templates can transform content
+
+[#alternate]
+== And radically change the output!
+</pre></div></div></div></div></div><div class="col-lg-6 border border-success"><div class="mx-5 py-5"><h3 class="h4 mb-5 text-center">Mau output</h2><h1 id="templates-can-transform-content-6347" class="mt-6">Templates can transform content</h1>
+<h2 id="and-radically-change-the-output-a214" class="mt-6">And radically change the output!</h2>
+<h3 class="h4 mt-6"># TEMPLATES CAN TRANSFORM CONTENT</h3>
+<span class="badge badge-pill badge-success">And radically change the output!</span></div></div></div></div></section><section class="demo pt-5 pb-5"><div class="container"><div class="w-75 mx-auto text-center mb-5"><h2 class="h3 text-center">Blocks</h2><p>Blocks are a powerful structure that can isolate and manipulate the content in different ways.</p></div><div class="row mb-7"><div class="col-lg-6 border border-secondary"><div class="mx-5 py-5"><h3 class="h4 mb-5 text-center">Mau source</h2><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre>[*quote]
+====
+Blocks can be used in multiple ways such as quotes.
+====
+Anonymous
+
+[*admonition, note, &quot;fas fa-info&quot;]
+====
+Or admonitions, but not only.
+====
+
+[*callout]
+====
+Through templates we can heavily customise the output.
+====
+</pre></div></div></div></div></div><div class="col-lg-6 border border-success"><div class="mx-5 py-5"><h3 class="h4 mb-5 text-center">Mau output</h2><div class="border-bottom mb-7"><blockquote class="blockquote"><p>Blocks can be used in multiple ways.</p><footer class="blockquote-footer">Anonymous</footer></blockquote></div>
+<div class="alert alert-primary alert-dismissible fade show" role="alert"><i class="fas fa-info mr-2"></i> Or admonitions, but not only.</div>
+<div class="duik-callout duik-callout-success" role="callout"><p>Through templates we can heavily customise the output.</p></div></div></div></div></div></section><section class="demo"><div class="container"><div class="h4 w-75 mx-auto text-center mb-5">Mau has many other features like including external content, source code highlighting, block engines, and rich templating options. In this documentation Mau is rendered using this website&#x27;s templates and CSS, but the possibilities are endless.</div></div></section><section class="demo"><div class="container"><div class="h4 w-75 mx-auto text-center mb-5">Read the <a href="./pages/introduction.html">full documentation</a>.</div></div></section>
+ 
+</main>
+
+<!-- Footer -->
+<footer class="bg-dark pt-4">
+  <div class="container">
+    <!-- Attributions -->
+    <div class="row px-md-3 py-4">
+      <div class="col text-center mb-3 mb-md-0">
+        <small class="text-white">&copy; 2024 Leonardo Giordani - Made with <a class="text-white" href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a></small>
+      </div>
+    </div>
+  </div>
+  <!-- End Attributions -->
+    </div>
+</footer>
+<!-- End Footer -->
+
+<!-- Go to Top -->
+<a class="js-go-to duik-go-to" href="javascript:;">
+  <span class="fa fa-arrow-up duik-go-to__inner"></span>
+</a>
+<!-- End Go to Top -->
+
+    <!-- JS Global Compulsory -->
+    <script src="./theme/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="./theme/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="./theme/vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="./theme/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="./theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="./theme/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+    <script src="./theme/vendor/jquery-ui/ui/widgets/menu.js"></script>
+    <script src="./theme/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+    <script src="./theme/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+    <script src="./theme/vendor/prism/prism.js"></script>
+
+    <!-- JS -->
+    <script src="./theme/js/main.js"></script>
+    <script src="./theme/js/autocomplete.js"></script>
+    <script src="./theme/js/custom-scrollbar.js"></script>
+
+<script src="./theme/js/header-fixing.js"></script>
+  </body>
+</html>

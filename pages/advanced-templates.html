@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title -->
+    <title>The Mau Book - Advanced Templates</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="">
+
+    <!--  Meta tags -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- Google Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../theme/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../theme/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../theme/vendor/prism/prism.css">
+
+    <!-- CSS Template -->
+    <link rel="stylesheet" href="/theme/css/main.min.css?1a97a760">
+
+<!-- Pygments CSS Template -->
+<link rel="stylesheet" href="/theme/css/pygments.min.css?29bb554c">
+    
+  </head>
+  <body class="bg-white">
+
+<!-- Header -->
+<header class="duik-header">
+  <nav class="navbar navbar-dark fixed-top bg-primary flex-nowrap p-0">
+    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The <strong>Mau</strong> Markup Language</a>
+
+    <!-- Header Links -->
+    <ul class="navbar-nav duik-header__nav small text-nowrap flex-row px-3 ml-0 ml-sm-3">
+      <li class="nav-item ml-4">
+        <a class="nav-link" href="https://github.com/Project-Mau/maubook/issues" title="Report an Issue" target="_blank"><i class="fas fa-bug mr-sm-1"></i> <span class="d-none d-lg-inline-block">Found an issue in the docs?</span></a>
+      </li>
+      <li class="nav-item ml-3 ml-sm-5">
+        <a class="btn btn-sm btn-light text-primary" href="https://github.com/Project-Mau" title="Download"><i class="fab fa-github mr-sm-1"></i> Fork on GitHub</a>
+      </li>
+    </ul>
+    <!-- End Header Links -->
+  </nav>
+</header>
+<!-- End Header -->
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <nav class="col-md-3 col-xl-2 bg-light duik-sidebar navbar-expand-md">
+      <div class="d-flex d-md-none justify-content-between mb-5">
+        <!-- Sidebar Search -->
+        <form class="col form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+        <!-- End Sidebar Search -->
+
+        <!-- Responsive Toggle Button -->
+        <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#sidebar-nav" aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+            <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+          </svg>
+        </button>
+        <!-- End Responsive Toggle Button -->
+      </div>
+
+      <!-- Sidebar Nav -->
+      <div class="collapse navbar-collapse" id="sidebar-nav">
+        <div class="js-scrollbar duik-sidebar-sticky">
+          <h5 class="duik-sidebar__heading">maubook</h5>
+          <ul class="duik-sidebar__nav">
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction.html">Introduction</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/install-and-run-mau.html">Install and Run Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/an-overview-of-mau.html">An overview of Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-syntax.html">Basic Syntax</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/formatting-text.html">Formatting text</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/headers.html">Headers</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/lists.html">Lists</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/images.html">Images</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/controls.html">Controls</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/blocks.html">Blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-engines-and-custom-definitions.html">Block Engines and Custom Definitions</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/footnotes.html">Footnotes</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-groups.html">Block groups</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-code-blocks.html">Source Code Blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-templates.html">Basic Templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link active" href="/pages/advanced-templates.html">Advanced Templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/list-of-nodes.html">List of nodes</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python Interface</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/configuration.html">Configuration</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/history-of-mau.html">History of Mau</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Sidebar Nav -->
+    </nav>
+    <!-- End Sidebar -->
+
+    <main class="ml-md-auto col-md-9 col-xl-10 px-4 pt-0 pt-md-11">
+      <div class="row pt-3">
+        <!-- Content Nav -->
+        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#advanced-templates-362c">Advanced Templates</a><ul><li class="duik-content-nav__item"><a href="#template-names-d8bb">Template names</a><ul><li class="duik-content-nav__item"><a href="#node-templates-76fc">Node templates</a></li><li class="duik-content-nav__item"><a href="#node-subtypes-334b">Node subtypes</a></li><li class="duik-content-nav__item"><a href="#node-tags-1136">Node tags</a></li><li class="duik-content-nav__item"><a href="#parent-templates-8ba9">Parent templates</a></li><li class="duik-content-nav__item"><a href="#visitor-prefixes-0df3">Visitor prefixes</a></li></ul></li></ul></li></ul></div>
+        <!-- End Content Nav -->
+
+        <!-- Content -->
+        <div class="col-xl-10 order-xl-1 duik-content border-bottom">
+          <div><div class="content"></div></div><div class="border-bottom mb-7"><h1>Advanced Templates</h1></div><div class="border-bottom mb-7"><blockquote class="blockquote"><p>&quot;In some ways you&#x27;re so advanced, and yet when it comes to making a decision, you&#x27;re still a child. I can&#x27;t decide for you, Charlie. The answer can&#x27;t be found in books — or be solved by bringing it to other people.&quot;</p><footer class="blockquote-footer">Daniel Keyes, <em>Flowers for Algernon</em> (1959)</footer></blockquote></div><h2 id="template-names-d8bb" class="mt-6">Template names<a class="js-anchor-link duik-anchorjs-link" href="#template-names-d8bb" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>Each component of a Mau document is transformed into a node of the AST, and each node is rendered using a template. For each node, Mau creates a list of several templates and tries to locate them. The first matching template will be loaded and used to render the node. Templates have a specific extension that depends on the output format (<code>.html</code> for HTML, <code>.tex</code> for TeX, and so on).</p><p>The names of possible templates are created considering several parts: the node templates, the node subtype, the node tags, the parent node, and the visitor prefixes, with the following schema:</p><p><code>{prefix}.{parent_type}.{parent_position}.{node_template}.{node_subtype}.{node_tag}</code></p><p>and the meta code that creates the list of possible template names is</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="n">templates</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">prefix</span><span class="si">}{</span><span class="n">parent_type</span><span class="si">}{</span><span class="n">node_template</span><span class="si">}{</span><span class="n">node_subtype</span><span class="si">}{</span><span class="n">node_tag</span><span class="si">}</span><span class="s2">&quot;</span>
+
+    <span class="k">for</span> <span class="n">prefix</span> <span class="ow">in</span> <span class="n">Visitor</span> <span class="n">prefixes</span>
+    <span class="k">for</span> <span class="n">parent_type</span> <span class="ow">in</span> <span class="n">Parent</span> <span class="n">templates</span>
+    <span class="k">for</span> <span class="n">node_template</span> <span class="ow">in</span> <span class="n">Node</span> <span class="n">templates</span>
+    <span class="k">for</span> <span class="n">node_subtype</span> <span class="ow">in</span> <span class="n">Node</span> <span class="n">subtypes</span>
+    <span class="k">for</span> <span class="n">node_tag</span> <span class="ow">in</span> <span class="n">Node</span> <span class="n">tags</span>
+<span class="p">]</span>
+</pre></div></div></div><h3 id="node-templates-76fc" class="mt-6">Node templates<a class="js-anchor-link duik-anchorjs-link" href="#node-templates-76fc" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>When Mau parses the text <code>*important*</code>, it generates a node with type <code>style</code> and value <code>star</code>. Such a node has two possible templates</p><ul><li><code>style.star</code></li><li><code>style</code></li></ul><p>While the first is specific for the style <code>star</code>, the second one is shared with styles <code>underscore</code>, <code>caret</code>, and <code>tilde</code>. This means that for HTML output you can create the file <code>style.html</code> that serves all styles, and then the file <code>style.star.html</code> to customise that specific style. As Mau provides default templates, you can clearly define only the latter.</p><p>The list of templates used for a specific node depends on the type of node and will be documented in the relative section.</p><h3 id="node-subtypes-334b" class="mt-6">Node subtypes<a class="js-anchor-link duik-anchorjs-link" href="#node-subtypes-334b" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>As document nodes can have a subtype the list of templates takes that into account. For each node template, Mau first tests if there is a more specific one that includes the subtype, so the list of templates is</p><ul><li><code>{node_template1}.{node_subtype}</code></li><li><code>{node_template1}</code></li><li><code>{node_template2}.{node_subtype}</code></li><li><code>{node_template2}</code></li><li>...</li><li><code>{node_type}.{node_subtype}</code></li><li><code>{node_type}</code></li></ul><p>where <code>node_template1</code>, <code>node_template2</code>, and so on are specific to the type of node.</p><p>For example, when Mau renders the text</p><div><div class="content"><p>This is an important paragraph</p></div></div><p>the list of possible templates is</p><ul><li><code>paragraph.important</code></li><li><code>paragraph</code></li></ul><h3 id="node-tags-1136" class="mt-6">Node tags<a class="js-anchor-link duik-anchorjs-link" href="#node-tags-1136" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>Each tag assigned to the node is used to find specialised templates appending the tag at the end of the template name, so the list is</p><ul><li><code>{node_template1}.{tag1}</code></li><li><code>{node_template1}.{tag2}</code></li><li><code>{node_template1}</code></li><li><code>{node_template2}.{tag1}</code></li><li><code>{node_template2}.{tag2}</code></li><li><code>{node_template2}</code></li><li>...</li><li><code>{node_type}.{tag1}</code></li><li><code>{node_type}.{tag2}</code></li><li><code>{node_type}</code></li></ul><p>For example, when Mau renders the text</p><div><div class="content"><p>This is an important paragraph</p></div></div><p>the list of possible templates is</p><ul><li><code>paragraph.tag1</code></li><li><code>paragraph.tag2</code></li><li><code>paragraph</code></li></ul><h3 id="parent-templates-8ba9" class="mt-6">Parent templates<a class="js-anchor-link duik-anchorjs-link" href="#parent-templates-8ba9" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>Each node is connected with the node that contains it, so the template can be chosen depending on the parent node type, the parent node subtype, or the position that the node has in the parent. For each template <code>TEMPLATE</code> the following variants are tested</p><ul><li><code>{parent.node_type}.{parent.subtype}.{parent_position}.TEMPLATE</code></li><li><code>{parent.node_type}.{parent.subtype}.TEMPLATE</code></li><li><code>{parent.node_type}.{parent_position}.TEMPLATE</code></li><li><code>{parent.node_type}.TEMPLATE</code></li><li><code>TEMPLATE</code></li></ul><p>The value <code>parent_position</code> is used by many nodes:</p><ul><li>Nodes in the text of titles have the position <code>title</code>.</li><li>Nodes in the text of headers have the position <code>header</code>.</li><li>Nodes in the primary content of blocks have the position <code>primary</code>.</li><li>Nodes in the secondary content of blocks have the position <code>secondary</code>.</li><li>Block groups contain one or more blocks with custom positions.</li></ul><p>For example, consider the following document. A paragraph with subtype <code>important</code> as primary content of a block with subtype <code>aside</code></p><div><div class="content"><div class="aside"><div class="content"><p>This is an important paragraph</p></div></div></div></div><p>the list of possible templates is</p><ul><li><code>block.aside.primary.paragraph.important</code></li><li><code>block.aside.primary.paragraph</code></li><li><code>block.aside.paragraph.important</code></li><li><code>block.aside.paragraph</code></li><li><code>block.primary.paragraph.important</code></li><li><code>block.primary.paragraph</code></li><li><code>block.paragraph.important</code></li><li><code>block.paragraph</code></li><li><code>paragraph.important</code></li><li><code>paragraph</code></li></ul><h3 id="visitor-prefixes-0df3" class="mt-6">Visitor prefixes<a class="js-anchor-link duik-anchorjs-link" href="#visitor-prefixes-0df3" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>When Mau renders a document it can be assigned a list of prefixes, used to identify templates. This is useful when the same parsed material has to be rendered in different ways at the same time. For example, the table of contents might be rendered using certain templates in the main area of an HTML page, but using different ones in the navigation bar.</p><p>The list of all templates is tested using each one of the prefixes, including the empty one. For example, if Mau is given the prefixes <code>prefix1</code> and <code>prefix2</code> the document</p><div><div class="content"><div class="aside"><div class="content"><p>This is an important paragraph</p></div></div></div></div><p>corresponds to the templates</p><ul><li><code>prefix1.block.aside.primary.paragraph.important</code></li><li><code>prefix1.block.aside.primary.paragraph</code></li><li><code>prefix1.block.aside.paragraph.important</code></li><li>...</li><li><code>prefix1.paragraph</code></li><li><code>prefix2.block.aside.primary.paragraph.important</code></li><li><code>prefix2.block.aside.primary.paragraph</code></li><li><code>prefix2.block.aside.paragraph.important</code></li><li>...</li><li><code>prefix2.paragraph</code></li><li><code>block.aside.primary.paragraph.important</code></li><li><code>block.aside.primary.paragraph</code></li><li><code>block.aside.paragraph.important</code></li><li>...</li><li><code>paragraph</code></li></ul><div id="_footnotes"></div>
+        </div>
+        <!-- End Content -->
+      </div>
+
+      <!-- Footer -->
+      <footer class="small py-4">
+        <div class="row">
+          <!-- Copyright -->
+          <div class="col-md-6 text-center text-dark text-md-left mb-3 mb-md-0">
+            &copy; 2024 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
+          </div>
+          <!-- End Copyright -->
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </main>
+  </div>
+</div>
+
+<!-- Go to Top -->
+<a class="js-go-to duik-go-to" href="javascript:;">
+  <span class="fa fa-arrow-up duik-go-to__inner"></span>
+</a>
+<!-- End Go to Top -->
+
+    <!-- JS Global Compulsory -->
+    <script src="../theme/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../theme/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="../theme/vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../theme/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="../theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../theme/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/menu.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+    <script src="../theme/vendor/prism/prism.js"></script>
+
+    <!-- JS -->
+    <script src="../theme/js/main.js"></script>
+    <script src="../theme/js/autocomplete.js"></script>
+    <script src="../theme/js/custom-scrollbar.js"></script>
+
+  </body>
+</html>

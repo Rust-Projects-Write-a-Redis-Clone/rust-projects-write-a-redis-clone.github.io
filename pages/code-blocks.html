@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title -->
+    <title>The Mau Book - Code Blocks</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="">
+
+    <!--  Meta tags -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- Google Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../theme/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../theme/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../theme/vendor/prism/prism.css">
+
+    <!-- CSS Template -->
+    <link rel="stylesheet" href="/theme/css/main.min.css?2d697538">
+
+  </head>
+  <body class="bg-white">
+
+<!-- Header -->
+<header class="duik-header">
+  <nav class="navbar navbar-dark fixed-top bg-primary flex-nowrap p-0">
+    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The <strong>Mau</strong> Markup Language</a>
+
+    <!-- Header Links -->
+    <ul class="navbar-nav duik-header__nav small text-nowrap flex-row px-3 ml-0 ml-sm-3">
+      <li class="nav-item ml-4">
+        <a class="nav-link" href="https://github.com/Project-Mau/maubook/issues" title="Report an Issue" target="_blank"><i class="fas fa-bug mr-sm-1"></i> <span class="d-none d-lg-inline-block">Found an issue in the docs?</span></a>
+      </li>
+      <li class="nav-item ml-3 ml-sm-5">
+        <a class="btn btn-sm btn-light text-primary" href="https://github.com/Project-Mau" title="Download"><i class="fab fa-github mr-sm-1"></i> Fork on GitHub</a>
+      </li>
+    </ul>
+    <!-- End Header Links -->
+  </nav>
+</header>
+<!-- End Header -->
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <nav class="col-md-3 col-xl-2 bg-light duik-sidebar navbar-expand-md">
+      <div class="d-flex d-md-none justify-content-between mb-5">
+        <!-- Sidebar Search -->
+        <form class="col form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+        <!-- End Sidebar Search -->
+
+        <!-- Responsive Toggle Button -->
+        <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#sidebar-nav" aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+            <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+          </svg>
+        </button>
+        <!-- End Responsive Toggle Button -->
+      </div>
+
+      <!-- Sidebar Nav -->
+      <div class="collapse navbar-collapse" id="sidebar-nav">
+        <div class="js-scrollbar duik-sidebar-sticky">
+          <h5 class="duik-sidebar__heading">maubook</h5>
+          <ul class="duik-sidebar__nav">
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction.html">Introduction</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/install-and-run-mau.html">Install and Run Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-syntax.html">Basic Syntax</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/mau-components.html">Mau Components</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/text-formatting.html">Text Formatting</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/links.html">Links</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/headers.html">Headers</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/variables.html">Variables</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/lists.html">Lists</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/images.html">Images</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link active" href="/pages/code-blocks.html">Code Blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/footnotes.html">Footnotes</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/blocks.html">Blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/built-in-blocks-and-other-features.html">Built-in Blocks and Other Features</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-engines-and-custom-definitions.html">Block Engines and Custom Definitions</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-templates.html">Basic Templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-templates.html">Advanced Templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/list-of-components.html">List of Components</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python Interface</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/configuration.html">Configuration</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/history-of-mau.html">History of Mau</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Sidebar Nav -->
+    </nav>
+    <!-- End Sidebar -->
+
+    <main class="ml-md-auto col-md-9 col-xl-10 px-4 pt-0 pt-md-11">
+      <div class="row pt-3">
+        <!-- Content Nav -->
+        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#code-blocks-a077">Code Blocks</a><ul><li class="duik-content-nav__item"><a href="#basic-source-blocks-4627">Basic source blocks</a></li><li class="duik-content-nav__item"><a href="#callouts-39ed">Callouts</a></li><li class="duik-content-nav__item"><a href="#highlight-lines-a608">Highlight lines</a></li><li class="duik-content-nav__item"><a href="#titles-c633">Titles</a></li></ul></li></ul></div>
+        <!-- End Content Nav -->
+
+        <!-- Content -->
+        <div class="col-xl-10 order-xl-1 duik-content border-bottom">
+          <div><div class="content"></div></div><div class="border-bottom mb-7"><h1>Code Blocks</h1></div><div class="border-bottom mb-7"><blockquote class="blockquote"><p>The older authorities seemed rather more helpful than the newer ones, and Armitage concluded that the code of the manuscript was one of great antiquity, no doubt handed down through a long line of mystical experimenters.</p><footer class="blockquote-footer">H.P. Lovecraft, <em>The Dunwich Horror</em> (1929)</footer></blockquote></div><p>For programmers, one of the most useful features of a markup language is source code blocks. Mau provides full support to source code highlighting, and allows you to highlight single lines and add callouts to the code to mark specific steps of the process or to add explanations.</p><h2 id="basic-source-blocks-4627" class="mt-6">Basic source blocks<a class="js-anchor-link duik-anchorjs-link" href="#basic-source-blocks-4627" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>Verbatim paragraphs and source code can be printed using <code>[*source]</code> and surrounding the code with a fence of four hyphens <code>----</code></p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">. Source code
+[*source]
+----
+This is all verbatim.
+
+== This is not a header
+
+[These are not attributes]
+----
+</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><div class="code mb-3 mt-1"><div class="title px-2">Source code</div><div class="content"><div class="highlight"><pre class="p-3">This is all verbatim.
+
+== This is not a header
+
+[These are not attributes]
+</pre></div></div></div></div><p>You can specify the language of the source code immediately after <code>*source</code></p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">[*source,python]
+----
+def header_anchor(text, level):
+    &quot;&quot;&quot;
+    A simple Python function
+    &quot;&quot;&quot;
+
+    return &quot;h{}-{}-{}&quot;.format(
+        level, quote(text.lower())[:20], str(id(text))[:8]
+    )  # pragma: no cover
+----
+</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="k">def</span> <span class="nf">header_anchor</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    A simple Python function</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">return</span> <span class="s2">&quot;h</span><span class="si">{}</span><span class="s2">-</span><span class="si">{}</span><span class="s2">-</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+        <span class="n">level</span><span class="p">,</span> <span class="n">quote</span><span class="p">(</span><span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">())[:</span><span class="mi">20</span><span class="p">],</span> <span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">text</span><span class="p">))[:</span><span class="mi">8</span><span class="p">]</span>
+    <span class="p">)</span>  <span class="c1"># pragma: no cover</span>
+</pre></div></div></div></div><div><div class="content"><p>Highlighting for the HTML output format is provided by <a href="https://pygments.org/">Pygments</a>. On the official website you can find the list of <a href="https://pygments.org/languages/">supported languages</a>.</p></div></div><h2 id="callouts-39ed" class="mt-6">Callouts<a class="js-anchor-link duik-anchorjs-link" href="#callouts-39ed" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>Source blocks support callouts, that allow you to add notes to specific lines of code. Callouts are added at the end of the line between colons (e.g. <code>:1:</code>) the relative text is added to the secondary content of the block</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">[*source,python]
+----
+def header_anchor(text, level)::1:
+    return &quot;h{}-{}-{}&quot;.format(
+        level, quote(text.lower())[:20], str(id(text))[:8]:2:
+    )  # pragma: no cover
+----
+1: The name of the function
+2: Some memory-related wizardry
+</pre></div></div></div><div><div class="content"><div class="duik-callout duik-callout-success" role="callout"><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="k">def</span> <span class="nf">header_anchor</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span> <span class="callout">1</span>
+    <span class="k">return</span> <span class="s2">&quot;h</span><span class="si">{}</span><span class="s2">-</span><span class="si">{}</span><span class="s2">-</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+        <span class="n">level</span><span class="p">,</span> <span class="n">quote</span><span class="p">(</span><span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">())[:</span><span class="mi">20</span><span class="p">],</span> <span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">text</span><span class="p">))[:</span><span class="mi">8</span><span class="p">]</span> <span class="callout">2</span>
+    <span class="p">)</span>  <span class="c1"># pragma: no cover</span>
+</pre></div></div><div class="callouts"><table><tbody><tr><td><span class="callout">1</span></td><td>The name of the function</td></tr><tr><td><span class="callout">2</span></td><td>Some memory-related wizardry</td></tr></tbody></table></div></div></div></div></div><p>The default delimiter for callouts is a colon <code>:</code>, but if that clashes with the syntax of your language you can pick a different one with the attribute <code>callouts</code></p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">[*source, python, callouts=&quot;|&quot;]
+----
+def header_anchor(text, level):|1|
+    return &quot;h{}-{}-{}&quot;.format(
+        level, quote(text.lower())[:20], str(id(text))[:8]|2|
+    )  # pragma: no cover
+----
+1: The name of the function
+2: Some memory-related wizardry
+</pre></div></div></div><div><div class="content"><div class="duik-callout duik-callout-success" role="callout"><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="k">def</span> <span class="nf">header_anchor</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span> <span class="callout">1</span>
+    <span class="k">return</span> <span class="s2">&quot;h</span><span class="si">{}</span><span class="s2">-</span><span class="si">{}</span><span class="s2">-</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+        <span class="n">level</span><span class="p">,</span> <span class="n">quote</span><span class="p">(</span><span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">())[:</span><span class="mi">20</span><span class="p">],</span> <span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">text</span><span class="p">))[:</span><span class="mi">8</span><span class="p">]</span> <span class="callout">2</span>
+    <span class="p">)</span>  <span class="c1"># pragma: no cover</span>
+</pre></div></div><div class="callouts"><table><tbody><tr><td><span class="callout">1</span></td><td>The name of the function</td></tr><tr><td><span class="callout">2</span></td><td>Some memory-related wizardry</td></tr></tbody></table></div></div></div></div></div><hr><p>Callouts names are just strings, not manipulated by Mau, so you can use them out of order</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">[*source,python]
+----
+def header_anchor(text, level)::1:
+    return &quot;h{}-{}-{}&quot;.format(:3:
+        level, quote(text.lower())[:20], str(id(text))[:8]:2:
+    )  # pragma: no cover
+----
+1: The name of the function
+2: Some memory-related wizardry
+3: This is the return value
+</pre></div></div></div><div><div class="content"><div class="duik-callout duik-callout-success" role="callout"><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="k">def</span> <span class="nf">header_anchor</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span> <span class="callout">1</span>
+    <span class="k">return</span> <span class="s2">&quot;h</span><span class="si">{}</span><span class="s2">-</span><span class="si">{}</span><span class="s2">-</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span> <span class="callout">3</span>
+        <span class="n">level</span><span class="p">,</span> <span class="n">quote</span><span class="p">(</span><span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">())[:</span><span class="mi">20</span><span class="p">],</span> <span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">text</span><span class="p">))[:</span><span class="mi">8</span><span class="p">]</span> <span class="callout">2</span>
+    <span class="p">)</span>  <span class="c1"># pragma: no cover</span>
+</pre></div></div><div class="callouts"><table><tbody><tr><td><span class="callout">1</span></td><td>The name of the function</td></tr><tr><td><span class="callout">2</span></td><td>Some memory-related wizardry</td></tr><tr><td><span class="callout">3</span></td><td>This is the return value</td></tr></tbody></table></div></div></div></div></div><p>Callouts are not limited to digits, you can use non-numeric labels</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">[*source,python]
+----
+def header_anchor(text, level)::step1:
+    return &quot;h{}-{}-{}&quot;.format(:step3:
+        level, quote(text.lower())[:20], str(id(text))[:8]:step2:
+    )  # pragma: no cover
+----
+1: The name of the function
+2: Some memory-related wizardry
+3: This is the return value
+</pre></div></div></div><div><div class="content"><div class="duik-callout duik-callout-success" role="callout"><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="k">def</span> <span class="nf">header_anchor</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span> <span class="callout">step1</span>
+    <span class="k">return</span> <span class="s2">&quot;h</span><span class="si">{}</span><span class="s2">-</span><span class="si">{}</span><span class="s2">-</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span> <span class="callout">step3</span>
+        <span class="n">level</span><span class="p">,</span> <span class="n">quote</span><span class="p">(</span><span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">())[:</span><span class="mi">20</span><span class="p">],</span> <span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">text</span><span class="p">))[:</span><span class="mi">8</span><span class="p">]</span> <span class="callout">step2</span>
+    <span class="p">)</span>  <span class="c1"># pragma: no cover</span>
+</pre></div></div><div class="callouts"><table><tbody><tr><td><span class="callout">1</span></td><td>The name of the function</td></tr><tr><td><span class="callout">2</span></td><td>Some memory-related wizardry</td></tr><tr><td><span class="callout">3</span></td><td>This is the return value</td></tr></tbody></table></div></div></div></div></div><p>Callouts do not need to have a definition</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">[*source,python]
+----
+def header_anchor(text, level)::1:
+    return &quot;h{}-{}-{}&quot;.format(
+        level, quote(text.lower())[:20], str(id(text))[:8]:2:
+    )  # pragma: no cover
+----
+</pre></div></div></div><div><div class="content"><div class="duik-callout duik-callout-success" role="callout"><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="k">def</span> <span class="nf">header_anchor</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span> <span class="callout">1</span>
+    <span class="k">return</span> <span class="s2">&quot;h</span><span class="si">{}</span><span class="s2">-</span><span class="si">{}</span><span class="s2">-</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+        <span class="n">level</span><span class="p">,</span> <span class="n">quote</span><span class="p">(</span><span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">())[:</span><span class="mi">20</span><span class="p">],</span> <span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">text</span><span class="p">))[:</span><span class="mi">8</span><span class="p">]</span> <span class="callout">2</span>
+    <span class="p">)</span>  <span class="c1"># pragma: no cover</span>
+</pre></div></div></div></div></div></div><p>And you can reference them in the text using <code>[class](1, "callout")</code>, and rendering it accordingly.</p><h2 id="highlight-lines-a608" class="mt-6">Highlight lines<a class="js-anchor-link duik-anchorjs-link" href="#highlight-lines-a608" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>You can highlight lines using a callout with the special name <code>@</code></p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">[*source,python]
+----
+def header_anchor(text, level)::@:
+    return &quot;h{}-{}-{}&quot;.format(
+        level, quote(text.lower())[:20], str(id(text))[:8]:@:
+    )  # pragma: no cover
+----
+</pre></div></div></div><div><div class="content"><div class="duik-callout duik-callout-success" role="callout"><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="hll"><span class="k">def</span> <span class="nf">header_anchor</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
+</span>    <span class="k">return</span> <span class="s2">&quot;h</span><span class="si">{}</span><span class="s2">-</span><span class="si">{}</span><span class="s2">-</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+<span class="hll">        <span class="n">level</span><span class="p">,</span> <span class="n">quote</span><span class="p">(</span><span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">())[:</span><span class="mi">20</span><span class="p">],</span> <span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">text</span><span class="p">))[:</span><span class="mi">8</span><span class="p">]</span>
+</span>    <span class="p">)</span>  <span class="c1"># pragma: no cover</span>
+</pre></div></div></div></div>
+<p>Should you prefer to list the lines you want to highlight you can use Pygments directly, passing the configuration value <code>hl_lines</code> under the namespace <code>pygments</code></p>
+<div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">[*source,python,pygments.hl_lines=&quot;1,3&quot;]
+----
+def header_anchor(text, level):
+    return &quot;h{}-{}-{}&quot;.format(
+        level, quote(text.lower())[:20], str(id(text))[:8]
+    )  # pragma: no cover
+----
+</pre></div></div></div>
+<div class="duik-callout duik-callout-success" role="callout"><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="hll"><span class="k">def</span> <span class="nf">header_anchor</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
+</span>    <span class="k">return</span> <span class="s2">&quot;h</span><span class="si">{}</span><span class="s2">-</span><span class="si">{}</span><span class="s2">-</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+<span class="hll">        <span class="n">level</span><span class="p">,</span> <span class="n">quote</span><span class="p">(</span><span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">())[:</span><span class="mi">20</span><span class="p">],</span> <span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">text</span><span class="p">))[:</span><span class="mi">8</span><span class="p">]</span>
+</span>    <span class="p">)</span>  <span class="c1"># pragma: no cover</span>
+</pre></div></div></div></div></div></div><h2 id="titles-c633" class="mt-6">Titles<a class="js-anchor-link duik-anchorjs-link" href="#titles-c633" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>Code blocks can have titles, created before the block by a line starting with a dot </p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3"><span class="o">.</span> <span class="n">Header</span> <span class="n">anchor</span> <span class="n">function</span>
+<span class="p">[</span><span class="o">*</span><span class="n">source</span><span class="p">]</span>
+<span class="o">----</span>
+<span class="k">def</span> <span class="nf">header_anchor</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    A simple Python function</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">return</span> <span class="s2">&quot;h</span><span class="si">{}</span><span class="s2">-</span><span class="si">{}</span><span class="s2">-</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+        <span class="n">level</span><span class="p">,</span> <span class="n">quote</span><span class="p">(</span><span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">())[:</span><span class="mi">20</span><span class="p">],</span> <span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">text</span><span class="p">))[:</span><span class="mi">8</span><span class="p">]</span>
+    <span class="p">)</span>  <span class="c1"># pragma: no cover</span>
+<span class="o">----</span>
+</pre></div></div></div><div><div class="content"><div class="duik-callout duik-callout-success" role="callout"><div class="code mb-3 mt-1"><div class="title px-2">Header anchor function</div><div class="content"><div class="highlight"><pre class="p-3"><span class="k">def</span> <span class="nf">header_anchor</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    A simple Python function</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">return</span> <span class="s2">&quot;h</span><span class="si">{}</span><span class="s2">-</span><span class="si">{}</span><span class="s2">-</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+        <span class="n">level</span><span class="p">,</span> <span class="n">quote</span><span class="p">(</span><span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">())[:</span><span class="mi">20</span><span class="p">],</span> <span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">text</span><span class="p">))[:</span><span class="mi">8</span><span class="p">]</span>
+    <span class="p">)</span>  <span class="c1"># pragma: no cover</span>
+</pre></div></div></div></div></div></div><div id="_footnotes"></div>
+        </div>
+        <!-- End Content -->
+      </div>
+
+      <!-- Footer -->
+      <footer class="small py-4">
+        <div class="row">
+          <!-- Copyright -->
+          <div class="col-md-6 text-center text-dark text-md-left mb-3 mb-md-0">
+            &copy; 2024 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
+          </div>
+          <!-- End Copyright -->
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </main>
+  </div>
+</div>
+
+<!-- Go to Top -->
+<a class="js-go-to duik-go-to" href="javascript:;">
+  <span class="fa fa-arrow-up duik-go-to__inner"></span>
+</a>
+<!-- End Go to Top -->
+
+    <!-- JS Global Compulsory -->
+    <script src="../theme/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../theme/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="../theme/vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../theme/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="../theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../theme/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/menu.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+    <script src="../theme/vendor/prism/prism.js"></script>
+
+    <!-- JS -->
+    <script src="../theme/js/main.js"></script>
+    <script src="../theme/js/autocomplete.js"></script>
+    <script src="../theme/js/custom-scrollbar.js"></script>
+
+  </body>
+</html>
