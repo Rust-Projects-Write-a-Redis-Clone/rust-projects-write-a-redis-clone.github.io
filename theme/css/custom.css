@@ -11,8 +11,8 @@
 }
 
 .alert-aside {
-  background-color: rgb(235.9, 248.1, 248.4);
-  border-color: rgb(197.7, 234.3, 235.2);
+  background-color: rgb(92.5098039216%, 97.2941176471%, 97.4117647059%);
+  border-color: rgb(77.5294117647%, 91.8823529412%, 92.2352941176%);
 }
 .alert-aside .alert-heading {
   color: #40babd;
@@ -37,7 +37,7 @@
   align-items: stretch;
   padding: 0;
   overflow: hidden;
-  background-color: rgb(235.9, 248.1, 248.4);
+  background-color: rgb(92.5098039216%, 97.2941176471%, 97.4117647059%);
   border-color: #40babd;
 }
 .alert-github .alert-icon {
